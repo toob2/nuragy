@@ -1,0 +1,38 @@
+.heading-primary {
+  color: $color-black;
+    
+    &--main {
+      font-size: 4rem;
+      font-weight: 900;
+      letter-spacing: 0.10rem;
+      display: block;
+      margin-left: 2rem;
+      font-family: $font-secondary;
+      
+      animation: moveInRight 1500ms ease-in-out 200ms;
+      
+    }
+
+    &--sub {
+      display: block;
+      margin-left: 6rem;
+      margin-top: 0.4rem;
+      font-family: $font-secondary;
+      font-size: 1.65rem;
+      font-weight: 600;
+      letter-spacing: 0.02rem;
+      animation: moveInBottom 1500ms ease-in-out 200ms;
+    }
+}
+
+.heading-secondary {
+  color: $color-black;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.text-small {
+  color: $color-black;
+  font-size: 1.75rem;
+}

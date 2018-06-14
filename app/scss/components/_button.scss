@@ -1,0 +1,18 @@
+.btn {
+
+  &:link,
+  &:visited {
+    display: inline-block;
+    color: $color-black;
+    font-size: $font-size-default;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 3rem; 
+    border-radius: 10rem;
+    background-color: red;
+    max-width: 20rem;
+    align-self: center;
+  }
+}
+  

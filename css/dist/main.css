@@ -1,0 +1,79 @@
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif; }
+
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: black;
+  font: 66%; }
+
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: table; }
+
+.container {
+  width: 75%;
+  margin: 0 auto; }
+
+.u-center-text {
+  text-align: center; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem; }
+
+header {
+  background-color: #b7b8b9;
+  color: #000;
+  font-size: 1.75rem; }
+
+.nav {
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .nav__logo {
+    font-size: 5rem; }
+  .nav__list {
+    height: 5rem;
+    display: flex;
+    align-items: center; }
+  .nav__item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-left: 3rem;
+    padding: 0 0.5rem; }
+    .nav__item:hover {
+      background-color: #717172; }
+  .nav__link {
+    height: 100%;
+    text-decoration: none;
+    color: #000; }
+    .nav__link:active {
+      color: #000; }
+    .nav__link:visited {
+      color: #000; }

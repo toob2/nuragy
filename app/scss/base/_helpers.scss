@@ -1,0 +1,52 @@
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+// // bootstrap container
+// .container {
+//   padding-right: 15px;
+//   padding-left: 15px;
+//   margin-right: auto;
+//   margin-left: auto;
+// }
+// @media (min-width: 768px) {
+//   .container {
+//     width: 750px;
+//   }
+// }
+// @media (min-width: 992px) {
+//   .container {
+//     width: 970px;
+//   }
+// }
+// @media (min-width: 1200px) {
+//   .container {
+//     width: 1170px;
+//   }
+// }
+
+
+
+.u-center-text {
+  text-align: center;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 4rem;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 2rem;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 0.75rem;
+}
+
