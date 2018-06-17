@@ -4,7 +4,7 @@
     display: inline-block;
     color: $color-logo;
     font-size: $font-size-default;
-    font-weight: 400;
+    font-weight: 500;
     text-transform: uppercase;
     text-decoration: none;
     padding: 1.5rem 3rem; 
@@ -12,17 +12,28 @@
     max-width: 20rem;
     align-self: center;
     transition: all 200ms;
+    box-shadow: 0 1rem 1.75rem rgba($color-black, 0.4);
   }
   &:hover {
-    transform: translateY(-0.3rem);
+    // transform: translateY(-0.3rem);
     box-shadow: 0 1rem 1.75rem rgba($color-black, 0.4)
   }
   &:active {
-    transform: translateY(-0.3rem);
+    // transform: translateY(-0.3rem);
     box-shadow: 0 0.5rem 0.75rem rgba($color-black, 0.4)
   }
-  &--red {
+  &--apply {
     background-color: red;
+    position: absolute;
+    bottom: 50%;
+    right: 5%;
+  }
+  &--hire {
+    background-color: red;
+    position: absolute;
+    bottom: 50%;
+    left: 1%;
+
   }
   
 }

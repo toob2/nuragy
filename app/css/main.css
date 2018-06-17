@@ -78,7 +78,7 @@ body {
   margin-bottom: 4rem; }
 
 .u-margin-bottom-medium {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 2rem; }
 
 .u-margin-bottom-small {
   margin-bottom: 0.75rem; }
@@ -270,8 +270,9 @@ header {
       transform: rotate(-45deg); }
 
 .about-box {
-  height: 90%;
+  height: 100%;
   width: 100%;
+  background-color: #eeeeee;
   text-align: center; }
   .about-box__text {
     height: 50%;
@@ -302,40 +303,58 @@ header {
   display: inline-block;
   color: #324050;
   font-size: 1.6rem;
-  font-weight: 400;
+  font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 3rem;
   border-radius: 5rem;
   max-width: 20rem;
   align-self: center;
-  transition: all 200ms; }
+  transition: all 200ms;
+  box-shadow: 0 1rem 1.75rem rgba(46, 49, 53, 0.4); }
 
 .btn:hover {
-  transform: translateY(-0.3rem);
   box-shadow: 0 1rem 1.75rem rgba(46, 49, 53, 0.4); }
 
 .btn:active {
-  transform: translateY(-0.3rem);
   box-shadow: 0 0.5rem 0.75rem rgba(46, 49, 53, 0.4); }
 
-.btn--red {
-  background-color: red; }
+.btn--apply {
+  background-color: red;
+  position: absolute;
+  bottom: 50%;
+  right: 5%; }
 
-.products-box {
-  height: 60%;
+.btn--hire {
+  background-color: red;
+  position: absolute;
+  bottom: 50%;
+  left: 1%; }
+
+.services-box {
+  height: 50%;
   width: 100%;
-  padding: 0.5rem;
   text-align: center; }
-  .products-box:last-child {
+  .services-box:last-child {
     background-color: #eeeeee; }
-  .products-box__text {
-    height: 100%;
+  .services-box__text {
+    height: 55%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around; }
-  .products-box__image {
-    display: none; }
+    justify-content: center;
+    padding: 4rem 1rem 0 1rem; }
+  .services-box__image--apply {
+    position: relative;
+    height: 45%;
+    background-image: url(../images/applicant.png);
+    background-size: cover;
+    background-position: left top; }
+  .services-box__image--hire {
+    position: relative;
+    height: 45%;
+    background-image: url(../images/hire.png);
+    background-size: cover;
+    background-position: top left; }
 
 .landing {
   width: 100%;
@@ -360,6 +379,11 @@ header {
   width: 100%;
   height: 100%; }
 
-.products {
+.services {
   width: 100%;
-  height: 100%; }
+  height: 200%; }
+
+.testimonials {
+  width: 100%;
+  height: 60%;
+  background-color: #eeeeee; }
