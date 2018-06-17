@@ -43,10 +43,22 @@
 }
 
 .u-margin-bottom-medium {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .u-margin-bottom-small {
   margin-bottom: 0.75rem;
 }
+
+.hr {
+  &--standard {
+     width: 65%;
+     align-self: center;
+     }
+  &--short {
+     width: 40%;
+     align-self: center;
+  }
+}  
+
 

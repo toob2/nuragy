@@ -1,18 +1,29 @@
 .btn {
-
   &:link,
   &:visited {
     display: inline-block;
-    color: $color-black;
+    color: $color-logo;
     font-size: $font-size-default;
     font-weight: 400;
     text-transform: uppercase;
     text-decoration: none;
     padding: 1.5rem 3rem; 
-    border-radius: 10rem;
-    background-color: red;
+    border-radius: 5rem;
     max-width: 20rem;
     align-self: center;
+    transition: all 200ms;
   }
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 1.75rem rgba($color-black, 0.4)
+  }
+  &:active {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 0.5rem 0.75rem rgba($color-black, 0.4)
+  }
+  &--red {
+    background-color: red;
+  }
+  
 }
   

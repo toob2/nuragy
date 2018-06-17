@@ -7,6 +7,8 @@
   position: relative;
    
     &__text-box {
+      padding: 0.75rem;
+      background-color:rgba(#fff, 0.25);
       position: absolute;
       width: 100%;
       bottom: 8%;
@@ -17,6 +19,11 @@
       background-size: cover;
       background-position: left;
     }
+}
+
+.about {
+  width: 100%;
+  height: 100%;
 }
 
 .products {
