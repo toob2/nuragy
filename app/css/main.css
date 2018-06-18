@@ -272,7 +272,7 @@ header {
 .about-box {
   height: 100%;
   width: 100%;
-  padding-top: 6rem;
+  padding-top: 2rem;
   background-color: #eeeeee;
   text-align: center; }
   .about-box__text {
@@ -330,11 +330,11 @@ header {
 .btn--hire {
   background-color: red;
   position: absolute;
-  bottom: 30%;
+  bottom: 40%;
   left: 2%; }
 
 .services-box {
-  height: calc(50% + 5.5rem);
+  height: 50%;
   width: 100%;
   text-align: center; }
   .services-box:last-child {
@@ -345,7 +345,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 5rem 1rem 0 1rem; }
+    padding: 2rem 1rem 0 1rem; }
   .services-box__image--apply {
     position: relative;
     height: 50%;
@@ -358,6 +358,31 @@ header {
     background-image: url(../images/hire.png);
     background-size: cover;
     background-position: center; }
+
+.slide {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  list-style-type: none;
+  padding: 5rem; }
+  .slide__item {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+    padding: 5rem; }
+    .slide__item:nth-child(2) {
+      background-color: yellow; }
+    .slide__item:nth-child(3) {
+      background-color: green; }
+    .slide__item--showing {
+      background-color: red;
+      opacity: 1;
+      z-index: 2;
+      padding: 5rem; }
 
 .landing {
   width: 100%;
@@ -380,13 +405,8 @@ header {
 
 .about {
   width: 100%;
-  height: calc(100% + 6rem); }
+  height: 120%; }
 
 .services {
   width: 100%;
-  height: calc(200% + 11rem); }
-
-.testimonials {
-  width: 100%;
-  height: 60%;
-  background-color: #eeeeee; }
+  height: 240%; }
