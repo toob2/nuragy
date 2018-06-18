@@ -1,31 +1,32 @@
 .services-box {
-  height: 50%;
+  height: calc(50% + 5.5rem);
   width: 100%;
   text-align: center; 
     &:last-child {
       background-color: $color-primary;
+      padding-top: 2rem;
     }
     &__text {
-      height: 55%;
+      height: 50%;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 4rem 1rem 0 1rem;
+      padding: 5rem 1rem 0 1rem;
     }
     &__image {
         &--apply {
           position: relative;
-          height: 45%;
+          height: 50%;
           background-image: url(../images/applicant.png);
           background-size: cover;
           background-position: left top;
         }
         &--hire {
           position: relative;
-          height: 45%;
+          height: 50%;
           background-image: url(../images/hire.png);
           background-size: cover;
-          background-position: top left;
+          background-position: center;
         }
     }
 }
