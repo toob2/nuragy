@@ -38,6 +38,14 @@
   text-align: center;
 }
 
+.u-left-text {
+  text-align: left;
+}
+
+.u-right-text {
+  text-align: right;
+}
+
 .u-margin-bottom-big {
   margin-bottom: 4rem;
 }
@@ -52,12 +60,18 @@
 
 .hr {
   &--standard {
-     width: 65%;
+     width: 75%;
      align-self: center;
+     border: none;
+     height: 0.15rem;
+     background-color: $color-black;
      }
   &--short {
-     width: 40%;
+     width: 50%;
      align-self: center;
+     border: none;
+     height: 0.15rem;
+     background-color: $color-black;
   }
 }  
 

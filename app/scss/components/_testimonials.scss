@@ -1,9 +1,14 @@
 .testimonials-box {
    height: 100%;
    width: 100%;
+   background-image: url(../images/testimonials.jpg);
+   background-size: cover;
+   background-position: left top;
       &__text {
          text-align: center;
-         
+         height: 35%;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
       }
-
-}
+   }
