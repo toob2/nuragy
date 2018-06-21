@@ -1,0 +1,47 @@
+.footer {
+   &__link {
+      text-decoration: underline dotted red;
+      color: $color-black;
+         &:hover {
+            color: red;
+         }
+   }
+}
+
+.footer-main {
+   padding-top: 2rem;
+   display: flex;
+   flex-direction: column;
+   background-color: $color-tertiary;
+   text-align: center;
+
+      &__link {
+         text-decoration: none;
+      } 
+
+      &__sitemap {
+         display: flex;
+         flex-direction: column;
+      }
+
+      &__office {
+
+      }
+
+      &__contact {
+
+      }
+}
+
+.footer-social {
+   display: flex;
+   justify-content: space-evenly;
+   background-color: $color-secondary;
+   padding: 1rem;
+      &__icon {
+         display: inline-block;
+         height: 4rem;
+         width: 4rem;
+      }  
+}
+

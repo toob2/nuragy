@@ -137,7 +137,7 @@ body {
 
 .text-small {
   color: #2e3135;
-  font-size: 1.75rem; }
+  font-size: 1.5rem; }
 
 .text-xs {
   color: #2e3135;
@@ -216,6 +216,34 @@ header {
   position: absolute;
   bottom: 40%;
   left: 2%; }
+
+.footer__link {
+  text-decoration: underline dotted red;
+  color: #2e3135; }
+  .footer__link:hover {
+    color: red; }
+
+.footer-main {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #aaaeb4;
+  text-align: center; }
+  .footer-main__link {
+    text-decoration: none; }
+  .footer-main__sitemap {
+    display: flex;
+    flex-direction: column; }
+
+.footer-social {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #bfc3c7;
+  padding: 1rem; }
+  .footer-social__icon {
+    display: inline-block;
+    height: 4rem;
+    width: 4rem; }
 
 .nav {
   position: fixed;
@@ -387,7 +415,7 @@ header {
   text-align: center; }
   .slide__icon {
     position: absolute;
-    top: -8%;
+    top: -3%;
     left: 2%; }
   .slide__item {
     display: flex;
