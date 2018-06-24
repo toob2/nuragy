@@ -176,6 +176,9 @@ header {
   font-size: 2.2rem;
   z-index: 5; }
 
+.header--closed {
+  display: none; }
+
 .about-box {
   height: 100%;
   width: 100%;
@@ -406,6 +409,15 @@ header {
     .nav__burger--active::after {
       transform: rotate(-45deg); }
 
+.modal__content {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 3rem;
+  overflow: auto; }
+
 .modal--closed {
   display: none; }
 
@@ -417,19 +429,11 @@ header {
   transform: translate(-50%, -50%);
   width: 60rem;
   max-width: 100%;
-  height: 50rem;
+  height: 40rem;
   max-height: 100%;
   text-align: center;
   background-color: red;
   z-index: 3; }
-  .modal--active__content {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 3rem;
-    overflow: auto; }
 
 .modal-overlay--closed {
   display: none; }
