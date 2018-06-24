@@ -29,8 +29,6 @@ btnHire.addEventListener('click', modalOpen);
 modalOverlay.addEventListener('click', modalClose);
 
 
-console.log(btnApply);
-
 
 
 
