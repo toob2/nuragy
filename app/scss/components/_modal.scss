@@ -5,8 +5,8 @@
       position: absolute;
       top: 0;
       left: 0; 
-      padding: 3rem;
       overflow: auto;
+      padding: 1rem;
       }
 
    &--closed {
@@ -24,7 +24,7 @@
    height: 40rem;
    max-height: 100%;
    text-align: center;
-   background-color: red;
+   background-color:$color-white;
    z-index: 3;
    }
 }

@@ -179,18 +179,61 @@
     </div>
   </footer>
   
-  
   <div class="modal--closed">
     <div class="modal__content">
-      <h2>modal</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe officiis distinctio earum eum vero. Hic possimus, accusantium cumque sit blanditiis aperiam natus labore optio obcaecati eveniet. Dolor iure dolores cupiditate.</p>
+
+      <h3 class="heading-tertiary u-margin-bottom-small">HEALTH CARE ASSISTANT/NURSE POSITION 
+      </h3>
+      <p class="text-xs">Please note this is not the full job application form. Nursing Agency will contact/send you the full form if your application has been successful. Thank you for your interest in working with us.
+      </p> 
+
+      <form action="" class="form">
+        <label for="name">Name</label>
+        <div class="form__name u-margin-bottom-small">
+          <input class="form__" name="name" type="text" placeholder="First">
+          <input name="name" type="text" placeholder="Last">
+        </div>
+        <label for="dob">Date of Birth</label>
+        <input class="u-margin-bottom-small" name="dob" type="date" placeholder="Date of Birth">
+        <label for="town">Town/City</label>
+        <input name="town" type="text">
+        <label for="contact">Contact Number</label>
+        <input name="contact" type="number">
+        <label for="email">Email</label>
+        <input name="email" type="email">
+
+        <label for="position">What position are you applying for?</label>
+        <label for="generalnurse">Registered General Nurse</label>
+        <input name="position" type="radio">        <input name="generalnurse" type="radio">
+        <label for="disabilitiesnurse">Registered Nurse Learning Disabilities</label>
+        <input name="position" type="radio">
+        <label for="mentalnurse">Mental Health Nurse</label>
+        <input name="position" type="radio">
+        <label for="careassistant">Health Care Assistant</label>
+        <input name="position" type="radio">
+
+        <label for="conviction">Have you ever been convicted of a criminal offence?</label>
+        <select name="conviction">
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+
+        <input type="submit" class="btn"></input>
+
+
+        
+
+
+
+
+
+
+
+      </form>
     </div>
   </div> 
-
   <div class="modal-overlay"></div>
-
-
-  
+ 
   <script src="js/navigation.js"></script>
   <script src="js/slide.js"></script>
   <script src="js/modal.js"></script>

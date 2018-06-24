@@ -1,0 +1,14 @@
+.form {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: left;
+      &__name {
+         width: 100%;
+         display: flex;
+         justify-content: flex-start;
+      }
+   
+   
+
+}

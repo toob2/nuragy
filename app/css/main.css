@@ -253,7 +253,7 @@ header {
   padding-top: 2rem;
   display: flex;
   flex-direction: column;
-  background-color: #aaaeb4;
+  background-color: #898b8d;
   text-align: center; }
   .footer-main__link {
     text-decoration: none; }
@@ -274,6 +274,16 @@ header {
     .footer-social__icon:hover {
       transform: scale(1.15);
       filter: saturate(2); }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left; }
+  .form__name {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; }
 
 .nav {
   position: fixed;
@@ -308,7 +318,7 @@ header {
         height: 100%; } }
     .nav__list--mobile {
       list-style-type: none;
-      background-image: linear-gradient(to right bottom, #eeeeee, #bfc3c7, #aaaeb4);
+      background-image: linear-gradient(to right bottom, #eeeeee, #bfc3c7, #898b8d);
       display: flex;
       align-items: center;
       flex-direction: column;
@@ -415,8 +425,8 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 3rem;
-  overflow: auto; }
+  overflow: auto;
+  padding: 1rem; }
 
 .modal--closed {
   display: none; }
@@ -432,7 +442,7 @@ header {
   height: 40rem;
   max-height: 100%;
   text-align: center;
-  background-color: red;
+  background-color: #fff;
   z-index: 3; }
 
 .modal-overlay--closed {
