@@ -76,6 +76,9 @@ body {
   width: 100%;
   height: 100%; }
 
+.body--modal {
+  overflow-y: hidden; }
+
 .clearfix::after {
   clear: both;
   content: '';
@@ -403,7 +406,11 @@ header {
     .nav__burger--active::after {
       transform: rotate(-45deg); }
 
-.modal {
+.modal--closed {
+  display: none; }
+
+.modal--active {
+  display: block;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -415,7 +422,7 @@ header {
   text-align: center;
   background-color: red;
   z-index: 3; }
-  .modal__content {
+  .modal--active__content {
     height: 100%;
     width: 100%;
     position: absolute;
@@ -424,14 +431,18 @@ header {
     padding: 3rem;
     overflow: auto; }
 
-.modal-overlay {
+.modal-overlay--closed {
+  display: none; }
+
+.modal-overlay--active {
+  display: block;
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
   z-index: 2;
-  background-color: #bfc3c7; }
+  background-color: rgba(191, 195, 199, 0.7); }
 
 .services-box {
   height: 50%;
