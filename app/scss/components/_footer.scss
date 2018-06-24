@@ -1,6 +1,6 @@
 .footer {
    &__link {
-      text-decoration: underline dotted red;
+      text-decoration: none;
       color: $color-black;
          &:hover {
             color: red;
@@ -37,11 +37,16 @@
    display: flex;
    justify-content: space-evenly;
    background-color: $color-secondary;
-   padding: 1rem;
+	padding: 1rem;
       &__icon {
          display: inline-block;
          height: 4rem;
-         width: 4rem;
+			width: 4rem;
+			transition: all 500ms ease-in-out;
+            &:hover {
+					transform: scale(1.15);
+					filter: saturate(2);
+            }
       }  
 }
 

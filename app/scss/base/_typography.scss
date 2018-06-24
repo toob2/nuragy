@@ -8,9 +8,7 @@
       display: block;
       margin-left: 2rem;
       font-family: $font-secondary;
-      
       animation: moveInRight 1500ms ease-in-out 200ms;
-      
     }
 
     &--sub {
@@ -39,9 +37,17 @@
   font-weight: 500;
 }
 
+.heading-quaternary {
+  color: $color-black;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+
 .text-small {
   color: $color-black;
-  font-size: 1.5rem;
+  font-size: 1.55rem;
 }
 
 .text-xs {
