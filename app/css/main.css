@@ -276,14 +276,32 @@ header {
       filter: saturate(2); }
 
 .form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: left; }
-  .form__name {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  background-color: #fff;
+  font-size: 1.5rem; }
+
+.input {
+  width: 100%;
+  position: relative; }
+  .input__field {
+    outline: none;
     width: 100%;
-    display: flex;
-    justify-content: flex-start; }
+    padding: 0.6rem 2rem 0.5rem 3rem;
+    box-shadow: 0.5rem 0.2rem 1rem rgba(137, 139, 141, 0.7);
+    font-size: 1.5rem;
+    border: 0.2rem #898b8d solid;
+    border-radius: 0.3rem; }
+    .input__field:focus {
+      border: 0.25rem red solid; }
+    .input__field--textarea {
+      font-family: "Roboto", sans-serif; }
+  .input__icon {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.65rem;
+    font-size: 2rem; }
 
 .nav {
   position: fixed;
@@ -425,8 +443,7 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  overflow: auto;
-  padding: 1rem; }
+  overflow: auto; }
 
 .modal--closed {
   display: none; }

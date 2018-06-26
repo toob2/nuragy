@@ -181,57 +181,37 @@
   
   <div class="modal--closed">
     <div class="modal__content">
+        <form action="" class="form">        
+          <div class="input u-margin-bottom-small">
+            <input class="input__field" type="text" name="name" placeholder="Name" required>
+            <span class="input__icon">
+              <i class="fas fa-user"></i>      
+            </span>
+          </div>
 
-      <h3 class="heading-tertiary u-margin-bottom-small">HEALTH CARE ASSISTANT/NURSE POSITION 
-      </h3>
-      <p class="text-xs">Please note this is not the full job application form. Nursing Agency will contact/send you the full form if your application has been successful. Thank you for your interest in working with us.
-      </p> 
+          <div class="input u-margin-bottom-small">
+            <input class="input__field " type="email" name="email" placeholder="Email" required>
+            <span class="input__icon">
+              <i class="fas fa-envelope"></i>      
+            </span>
+          </div>
 
-      <form action="" class="form">
-        <label for="name">Name</label>
-        <div class="form__name u-margin-bottom-small">
-          <input class="form__" name="name" type="text" placeholder="First">
-          <input name="name" type="text" placeholder="Last">
-        </div>
-        <label for="dob">Date of Birth</label>
-        <input class="u-margin-bottom-small" name="dob" type="date" placeholder="Date of Birth">
-        <label for="town">Town/City</label>
-        <input name="town" type="text">
-        <label for="contact">Contact Number</label>
-        <input name="contact" type="number">
-        <label for="email">Email</label>
-        <input name="email" type="email">
+          <div class="input u-margin-bottom-small">
+            <input class="input__field " type="number" name="contact" placeholder="Contact Number">
+            <span class="input__icon">
+              <i class="fas fa-phone"></i>      
+            </span>
+          </div>
 
-        <label for="position">What position are you applying for?</label>
-        <label for="generalnurse">Registered General Nurse</label>
-        <input name="position" type="radio">        <input name="generalnurse" type="radio">
-        <label for="disabilitiesnurse">Registered Nurse Learning Disabilities</label>
-        <input name="position" type="radio">
-        <label for="mentalnurse">Mental Health Nurse</label>
-        <input name="position" type="radio">
-        <label for="careassistant">Health Care Assistant</label>
-        <input name="position" type="radio">
-
-        <label for="conviction">Have you ever been convicted of a criminal offence?</label>
-        <select name="conviction">
-          <option value="Yes">Yes</option>
-          <option value="No">No</option>
-        </select>
-
-        <input type="submit" class="btn"></input>
-
-
-        
-
-
-
-
-
-
-
-      </form>
-    </div>
-  </div> 
+          <div class="input u-margin-bottom-small">
+            <textarea class="input__field input__field--textarea" id="textarea" placeholder="Please Comment here" name="textarea" cols="30" rows="5"></textarea>
+            <span class="input__icon">
+              <i class="fas fa-comments"></i>      
+            </span>
+          </div>  
+        </form>
+    </div> 
+  </div>  
   <div class="modal-overlay"></div>
  
   <script src="js/navigation.js"></script>
