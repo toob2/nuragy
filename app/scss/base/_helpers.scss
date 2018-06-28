@@ -58,20 +58,27 @@
   margin-bottom: 0.75rem;
 }
 
+.u-margin-bottom-xs {
+  margin-bottom: 0.4rem;
+}
+
 .hr {
   &--standard {
-     width: 75%;
-     align-self: center;
-     border: none;
-     height: 0.15rem;
-     background-color: $color-black;
-     }
+    width: 75%;
+    align-self: center;
+    border: none;
+    height: 0.15rem;
+    opacity: 0.6;
+    background-color: $color-black;
+    }
+
   &--short {
-     width: 50%;
-     align-self: center;
-     border: none;
-     height: 0.15rem;
-     background-color: $color-black;
+    width: 50%;
+    align-self: center;
+    border: none;
+    height: 0.15rem;
+    opacity: 0.6;
+    background-color: $color-black;
   }
 }  
 

@@ -181,35 +181,53 @@
   
   <div class="modal--closed">
     <div class="modal__content">
-        <form action="" class="form">        
-          <div class="input u-margin-bottom-small">
-            <input class="input__field" type="text" name="name" placeholder="Name" required>
-            <span class="input__icon">
-              <i class="fas fa-user"></i>      
-            </span>
+      <form action="" class="form">  
+        <h3 class="heading-tertiary--form u-margin-bottom-xs">Nurse / Health Care Assistant position</h3>  
+        <hr class="hr--standard u-margin-bottom-xs">
+        <p class="text-small--form u-margin-bottom-xs">Please note this is not the full job application form. Nursing agency will contact/send you the full form if your application has been successful.</p>  
+        <p class="text-small--form u-margin-bottom-small">Please tell us in which position are you interested in and fill in the relevant details:</p>
+
+        <div class="position u-margin-bottom-medium">      <div class="position-1">        
+            <input class="position__radio" type="radio"  name="account" value="none" checked>
+            <label for="radioOne">Registered Nurse</label>
           </div>
 
-          <div class="input u-margin-bottom-small">
-            <input class="input__field " type="email" name="email" placeholder="Email" required>
-            <span class="input__icon">
-              <i class="fas fa-envelope"></i>      
-            </span>
+          <div class="position-2">
+            <input class="position__radio" type="radio" name="account" value="none">
+            <label for="radioOne">Health Care Assistant</label>
           </div>
+        </div>
+      
+        <div class="input u-margin-bottom-small">
+          <input class="input__field" type="text" name="name" placeholder="Name" required>
+          <span class="input__icon">
+            <i class="fas fa-user"></i>      
+          </span>
+        </div>
 
-          <div class="input u-margin-bottom-small">
-            <input class="input__field " type="number" name="contact" placeholder="Contact Number">
-            <span class="input__icon">
-              <i class="fas fa-phone"></i>      
-            </span>
-          </div>
+        <div class="input u-margin-bottom-small">
+          <input class="input__field " type="email" name="email" placeholder="Email" required>
+          <span class="input__icon">
+            <i class="fas fa-envelope"></i>      
+          </span>
+        </div>
 
-          <div class="input u-margin-bottom-small">
-            <textarea class="input__field input__field--textarea" id="textarea" placeholder="Please Comment here" name="textarea" cols="30" rows="5"></textarea>
-            <span class="input__icon">
-              <i class="fas fa-comments"></i>      
-            </span>
-          </div>  
-        </form>
+        <div class="input u-margin-bottom-small">
+          <input class="input__field " type="number" name="contact" placeholder="Contact Number">
+          <span class="input__icon">
+            <i class="fas fa-phone"></i>      
+          </span>
+        </div>
+
+        <div class="input u-margin-bottom-small">
+          <textarea class="input__field input__field--textarea" id="textarea" placeholder="Please tell us more about your experience in health care" name="textarea" cols="30" rows="5"></textarea>
+          <span class="input__icon">
+            <i class="fas fa-comments"></i>      
+          </span>
+        </div>  
+
+        <input type="submit" value="Submit" class="btn--submit">
+      </form>
     </div> 
   </div>  
   <div class="modal-overlay"></div>
