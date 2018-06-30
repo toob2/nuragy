@@ -29,6 +29,11 @@
       position: absolute;
       bottom: 50%;
       right: 5%;
+        @media only screen and (orientation: landscape){
+          bottom: 50%;
+          right: 5%;
+        }
+
     }
 
     &--hire {
@@ -36,6 +41,10 @@
       position: absolute;
       bottom: 40%;
       left: 2%;
+        @media only screen and (orientation: landscape){
+          bottom: 40%;
+          left: 0;
+        }
     }
 
     &--submit {

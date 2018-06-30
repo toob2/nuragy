@@ -9,8 +9,10 @@
          display: flex;
          flex-direction: column;
          justify-content: space-around;
-         background-clip: padding-box;
          border-radius: 1.5rem;
+            @media only screen and (orientation: landscape){
+               height: 140%;
+          }
       }
 }
 

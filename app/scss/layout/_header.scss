@@ -7,6 +7,10 @@ header {
   color: $color-logo;
   font-size: 2.2rem;
   z-index: 5;
+
+  @media only screen and (orientation: landscape){
+    height: calc(1.5*#{$header-height});
+  }
 }
 
 .header--closed {

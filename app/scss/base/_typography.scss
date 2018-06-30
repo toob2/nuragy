@@ -9,6 +9,10 @@
       margin-left: 2rem;
       font-family: $font-secondary;
       animation: moveInRight 1500ms ease-in-out 200ms;
+
+        @media only screen and (orientation: landscape){
+          font-size: 2.85rem;
+        }
     }
 
     &--sub {
@@ -20,6 +24,11 @@
       font-weight: 600;
       letter-spacing: 0.02rem;
       animation: moveInBottom 1500ms ease-in-out 200ms;
+
+        @media only screen and (orientation: landscape){
+          font-size: 1.4rem;
+
+      }
     }
 }
   
