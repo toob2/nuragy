@@ -40,8 +40,9 @@
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(15rem);
+    transform: translateX(150%);
   }
+
   85% {
     opacity: 1;
     transform: translateX(-2rem);

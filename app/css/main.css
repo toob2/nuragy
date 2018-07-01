@@ -26,7 +26,7 @@
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(15rem); }
+    transform: translateX(150%); }
   85% {
     opacity: 1;
     transform: translateX(-2rem); }
@@ -70,6 +70,9 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   font-family: "Roboto", sans-serif; }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+    html {
+      font-size: 90%; } }
 
 body {
   position: absolute;
@@ -134,10 +137,13 @@ body {
     display: block;
     margin-left: 2rem;
     font-family: "Lato", sans-serif;
-    animation: moveInRight 1500ms ease-in-out 200ms; }
+    animation: moveInRight 2s ease-in-out 200ms; }
     @media only screen and (orientation: landscape) {
       .heading-primary--main {
         font-size: 2.85rem; } }
+    @media only screen and (min-width: 760px) {
+      .heading-primary--main {
+        font-size: 6rem; } }
   .heading-primary--sub {
     display: block;
     margin-left: 4rem;
@@ -146,10 +152,13 @@ body {
     font-size: 1.65rem;
     font-weight: 600;
     letter-spacing: 0.02rem;
-    animation: moveInBottom 1500ms ease-in-out 200ms; }
+    animation: moveInBottom 2s ease-in-out 200ms; }
     @media only screen and (orientation: landscape) {
       .heading-primary--sub {
         font-size: 1.4rem; } }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+      .heading-primary--sub {
+        font-size: 2.5rem; } }
 
 .heading-secondary {
   color: #2e3135;
@@ -265,6 +274,9 @@ header {
     .btn--apply {
       bottom: 50%;
       right: 5%; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+    .btn--apply {
+      right: 12%; } }
 
 .btn--hire {
   background-color: red;
@@ -356,7 +368,7 @@ header {
       content: '';
       position: absolute;
       top: 0;
-      left: -0.1rem;
+      left: -0.5rem;
       width: 1.5rem;
       height: 1.5rem;
       border-radius: 50rem;
@@ -367,7 +379,7 @@ header {
       content: '';
       position: absolute;
       top: 0;
-      left: -0.1rem;
+      left: -0.5rem;
       width: 1.5rem;
       height: 1.5rem;
       border: 0.07rem solid red;
@@ -404,10 +416,6 @@ header {
   justify-content: space-between;
   align-items: center;
   position: relative; }
-  @media only screen and (min-width: 768px) {
-    .nav {
-      width: 80%;
-      margin: 0% auto; } }
   .nav__logo {
     height: calc(0.85*10vh);
     padding-left: 1.5rem;
@@ -415,6 +423,9 @@ header {
     @media only screen and (orientation: landscape) {
       .nav__logo {
         height: calc(1.35*10vh); } }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+      .nav__logo {
+        height: calc(0.7*10vh); } }
   .nav__logo-text {
     letter-spacing: 0.3rem;
     padding-left: 0.65rem;
@@ -424,9 +435,12 @@ header {
     @media only screen and (orientation: landscape) {
       .nav__logo-text {
         font-size: calc(0.45*10vh); } }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+      .nav__logo-text {
+        font-size: calc(0.2*10vh); } }
   .nav__list {
     display: none; }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 1024px) {
       .nav__list {
         list-style-type: none;
         display: flex;
@@ -444,12 +458,12 @@ header {
       top: 0;
       height: calc(100% + 5.5rem);
       animation: dropDown 600ms ease-in-out;
-      padding-top: 28rem;
-      font-size: 3rem; }
-      @media only screen and (max-height: 670px) {
+      font-size: 3rem;
+      padding-top: 25rem; }
+      @media only screen and (min-height: 800px) {
         .nav__list--mobile {
-          padding-top: 22rem; } }
-      @media only screen and (min-width: 768px) {
+          padding-top: 30rem; } }
+      @media only screen and (min-width: 1024px) {
         .nav__list--mobile {
           position: absolute;
           right: 0;
@@ -468,7 +482,7 @@ header {
   .nav__item {
     display: flex;
     text-align: center; }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 1024px) {
       .nav__item {
         margin-left: 1.5rem;
         height: 100%;
@@ -481,7 +495,7 @@ header {
     padding: 0 1rem;
     animation: moveInLeft 900ms ease-in-out;
     transition: all 200ms ease-in-out; }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 1024px) {
       .nav__link {
         width: 100%;
         display: flex;
@@ -504,7 +518,7 @@ header {
     width: 3.5rem;
     text-decoration: none;
     margin-right: 4%; }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 1024px) {
       .nav__toggler {
         display: none; } }
   .nav__burger {
@@ -673,11 +687,18 @@ header {
   background-image: url(../images/main.jpg);
   background-size: cover;
   background-position: top left;
+  background-repeat: no-repeat;
   position: relative; }
   @media only screen and (orientation: landscape) {
     .landing {
       background-image: url(../images/mainLandscape.jpg);
       background-size: cover; } }
+  @media only screen and (min-width: 760px) {
+    .landing {
+      background-image: url(../images/mainBig.jpg);
+      background-size: cover;
+      background-position: -25rem 2rem;
+      background-repeat: no-repeat; } }
   .landing__text-box {
     padding: 0.75rem;
     background-color: rgba(255, 255, 255, 0.35);
@@ -687,11 +708,6 @@ header {
     @media only screen and (orientation: landscape) {
       .landing__text-box {
         bottom: 3%; } }
-  @media only screen and (min-width: 768px) {
-    .landing {
-      background-image: url(../images/mainBig.jpg);
-      background-size: cover;
-      background-position: left; } }
 
 .about {
   width: 100%;

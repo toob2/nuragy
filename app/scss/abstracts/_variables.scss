@@ -1,10 +1,10 @@
 //BREAKPOINTS
 $breakpoint-small: 320px;
-$breakpoint-medium: 768px;
+$breakpoint-medium: 760px;
 $breakpoint-large: 1024px;
 
 //BURGER
-$burger-line-height: .3rem;
+$burger-line-height: 0.3rem;
 $burger-line-width: 3.5rem;
 
 //COLORS
@@ -23,6 +23,10 @@ $color-form-items:rgb(27, 78, 219);
 $font-primary: 'Roboto', sans-serif;
 $font-secondary: 'Lato', sans-serif;
 $font-size-default: 1.6rem;
+$font-size-medium: 2.5rem;
+$font-size-large: 3.5rem;
+
+
 
 //NAVIGATION
 $header-height: 10vh;
