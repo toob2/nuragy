@@ -1,7 +1,9 @@
 .footer {
+
    &__link {
       text-decoration: none;
       color: $color-black;
+      
          &:hover {
             color: red;
          }
@@ -10,8 +12,7 @@
 
 .footer-main {
    padding-top: 2rem;
-   display: flex;
-   flex-direction: column;
+   @include flex (column);
    background-color: $color-tertiary;
    text-align: center;
 
@@ -34,15 +35,16 @@
 }
 
 .footer-social {
-   display: flex;
-   justify-content: space-evenly;
+   @include flex (row, space-evenly);
    background-color: $color-secondary;
-	padding: 1rem;
+   padding: 1rem;
+   
       &__icon {
          display: inline-block;
          height: 4rem;
 			width: 4rem;
-			transition: all 500ms ease-in-out;
+         transition: all 500ms ease-in-out;
+         
             &:hover {
 					transform: scale(1.15);
 					filter: saturate(2);

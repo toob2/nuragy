@@ -70,9 +70,6 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   font-family: "Roboto", sans-serif; }
-  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-    html {
-      font-size: 90%; } }
 
 body {
   position: absolute;
@@ -147,40 +144,28 @@ body {
   background-color: #2e3135; }
 
 .heading-primary {
-  color: #2e3135; }
+  color: #324050; }
   .heading-primary--main {
+    font-family: "Lato", sans-serif;
     font-size: 4rem;
     font-weight: 900;
+    margin-left: 3%;
     letter-spacing: 0.10rem;
     display: block;
-    margin-left: 2rem;
-    font-family: "Lato", sans-serif;
     animation: moveInRight 2s ease-in-out 200ms; }
-    @media only screen and (orientation: landscape) {
-      .heading-primary--main {
-        font-size: 2.85rem; } }
-    @media only screen and (min-width: 760px) {
-      .heading-primary--main {
-        font-size: 6rem; } }
   .heading-primary--sub {
-    display: block;
-    margin-left: 4rem;
-    margin-top: 0.4rem;
     font-family: "Lato", sans-serif;
-    font-size: 1.65rem;
+    font-size: 1.25rem;
     font-weight: 600;
     letter-spacing: 0.02rem;
+    display: block;
+    margin: 0.2rem 1.5rem 0 0;
+    text-align: right;
     animation: moveInBottom 2s ease-in-out 200ms; }
-    @media only screen and (orientation: landscape) {
-      .heading-primary--sub {
-        font-size: 1.4rem; } }
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-      .heading-primary--sub {
-        font-size: 2.5rem; } }
 
 .heading-secondary {
   color: #2e3135;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-transform: uppercase;
   font-weight: 600; }
 
@@ -210,17 +195,15 @@ body {
   font-size: 1.25rem; }
 
 header {
-  height: 7vh;
+  height: 4rem;
   width: 100%;
   background-color: transparent;
   position: fixed;
-  top: 0;
+  top: 0.3rem;
+  left: 0;
   color: #324050;
-  font-size: 2.2rem;
+  padding-top: 0.25rem;
   z-index: 5; }
-  @media only screen and (orientation: landscape) {
-    header {
-      height: calc(1.5*7vh); } }
 
 .header--closed {
   display: none; }
@@ -236,7 +219,8 @@ header {
     padding: 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: center; }
+    justify-content: center;
+    align-items: center; }
   .about-box__image {
     height: 50%;
     width: 100%;
@@ -251,16 +235,19 @@ header {
         background-repeat: no-repeat; } }
   .about-box__text-box {
     width: 75%;
-    height: 15%;
+    height: 12%;
     padding: 0 0.2rem 0 0.2rem;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(238, 238, 238, 0.5);
     position: absolute;
     left: 50%;
-    bottom: 1rem;
+    bottom: 5%;
     transform: translateX(-50%);
     display: flex;
-    flex-direction: column;
-    justify-content: space-around; }
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.1rem solid #eeeeee;
+    border-radius: 0.4rem; }
 
 .btn:link, .btn:visited {
   display: inline-block;
@@ -336,6 +323,8 @@ header {
   padding-top: 2rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   background-color: #898b8d;
   text-align: center; }
   .footer-main__link {
@@ -346,7 +335,9 @@ header {
 
 .footer-social {
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
+  align-items: center;
   background-color: #bfc3c7;
   padding: 1rem; }
   .footer-social__icon {
@@ -376,7 +367,9 @@ header {
 
 .position {
   display: flex;
-  justify-content: space-around; }
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
   .position__radio {
     position: relative;
     visibility: hidden; }
@@ -431,31 +424,20 @@ header {
   top: 0;
   height: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   position: relative; }
   .nav__logo {
-    height: calc(0.85*7vh);
-    padding-left: 1.5rem;
-    padding-top: 0.25rem; }
-    @media only screen and (orientation: landscape) {
-      .nav__logo {
-        height: calc(1.35*7vh); } }
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-      .nav__logo {
-        height: calc(0.7*7vh); } }
+    padding-left: 1rem;
+    height: 4rem;
+    widows: 1rem; }
   .nav__logo-text {
-    letter-spacing: 0.3rem;
-    padding-left: 0.65rem;
-    font-weight: 400;
     color: #324050;
-    font-size: calc(0.22*7vh); }
-    @media only screen and (orientation: landscape) {
-      .nav__logo-text {
-        font-size: calc(0.45*7vh); } }
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-      .nav__logo-text {
-        font-size: calc(0.2*7vh); } }
+    font-size: 1.25rem;
+    letter-spacing: 0.15rem;
+    padding-left: 0.65rem;
+    font-weight: 400; }
   .nav__list {
     display: none; }
     @media only screen and (min-width: 1024px) {
@@ -464,32 +446,49 @@ header {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
+        align-items: center;
         height: 100%; } }
     .nav__list--mobile {
       list-style-type: none;
       background-image: linear-gradient(to right bottom, #eeeeee, #bfc3c7, #898b8d);
-      display: flex;
-      align-items: center;
-      flex-direction: column;
+      text-align: center;
       width: 100%;
       position: fixed;
       top: 0;
       height: calc(100% + 5.5rem);
       animation: dropDown 600ms ease-in-out;
-      font-size: 3rem;
-      padding-top: 25rem; }
-      @media only screen and (min-height: 800px) {
+      padding-top: 22rem; }
+      @media only screen and (min-height: 640px) {
         .nav__list--mobile {
-          padding-top: 30rem; } }
+          padding-top: 27rem; } }
+      @media only screen and (min-height: 750px) {
+        .nav__list--mobile {
+          padding-top: 33rem; } }
+      @media only screen and (min-height: 850px) {
+        .nav__list--mobile {
+          padding-top: 40rem; } }
+      @media only screen and (min-height: 950px) {
+        .nav__list--mobile {
+          padding-top: 45rem; } }
+      @media only screen and (min-height: 1050px) {
+        .nav__list--mobile {
+          padding-top: 50rem; } }
+      @media only screen and (min-height: 1150px) {
+        .nav__list--mobile {
+          padding-top: 45rem; } }
+      @media only screen and (min-height: 1250px) {
+        .nav__list--mobile {
+          padding-top: 50rem; } }
       @media only screen and (min-width: 1024px) {
         .nav__list--mobile {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          align-items: center;
           position: absolute;
           right: 0;
           background-image: none;
           max-width: 70%;
-          display: flex;
-          flex-direction: row;
-          justify-content: flex-end;
           padding-top: 0;
           height: 100%;
           font-size: 2rem;
@@ -497,16 +496,8 @@ header {
       @media only screen and (orientation: landscape) {
         .nav__list--mobile {
           padding-top: 8rem; } }
-  .nav__item {
-    display: flex;
-    text-align: center; }
-    @media only screen and (min-width: 1024px) {
-      .nav__item {
-        margin-left: 1.5rem;
-        height: 100%;
-        display: flex;
-        justify-content: flex-end; } }
   .nav__link {
+    font-size: 2.75rem;
     text-decoration: none;
     color: #2a2c2c;
     width: 100vw;
@@ -526,7 +517,6 @@ header {
       transform: scale(1.2);
       margin-top: 0; }
     .nav__link--logo {
-      height: 7vh;
       text-decoration: none;
       color: black;
       display: flex;
@@ -535,8 +525,7 @@ header {
   .nav__toggler {
     display: block;
     cursor: pointer;
-    padding: 1.1rem 4rem 1.5rem 0rem;
-    height: 0.3rem;
+    height: 0.25rem;
     width: 3.5rem;
     text-decoration: none;
     margin-right: 4%; }
@@ -546,13 +535,15 @@ header {
   .nav__burger {
     content: '';
     position: absolute;
-    height: 0.3rem;
+    height: 0.25rem;
     width: 3.5rem;
-    background-color: #324050; }
+    background-color: #324050;
+    top: 1.5rem;
+    cursor: pointer; }
     .nav__burger::before {
       content: '';
       position: absolute;
-      height: 0.3rem;
+      height: 0.25rem;
       width: 3.5rem;
       background-color: #324050;
       top: -0.9rem;
@@ -560,7 +551,7 @@ header {
     .nav__burger::after {
       content: '';
       position: absolute;
-      height: 0.3rem;
+      height: 0.25rem;
       width: 3.5rem;
       background-color: #324050;
       bottom: -0.9rem;
@@ -620,12 +611,16 @@ header {
     padding-top: 2rem; }
   @media only screen and (orientation: landscape) {
     .services-box {
-      display: flex; } }
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; } }
   .services-box__text {
     height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 2rem 1rem 0 1rem; }
     @media only screen and (orientation: landscape) {
       .services-box__text {
@@ -678,6 +673,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     height: 100%;
     padding: 0 1rem 0 1rem;
     position: absolute;
@@ -708,28 +704,19 @@ header {
   height: 100%;
   background-image: url(../images/main.jpg);
   background-size: cover;
-  background-position: top left;
+  background-position: 0 1rem;
   background-repeat: no-repeat;
   position: relative; }
   @media only screen and (orientation: landscape) {
     .landing {
       background-image: url(../images/mainLandscape.jpg);
       background-size: cover; } }
-  @media only screen and (min-width: 760px) {
-    .landing {
-      background-image: url(../images/mainBig.jpg);
-      background-size: cover;
-      background-position: -25rem 2rem;
-      background-repeat: no-repeat; } }
   .landing__text-box {
-    padding: 0.75rem;
+    padding: 0.75rem 0 1rem;
     background-color: rgba(255, 255, 255, 0.35);
     position: absolute;
     width: 100%;
-    bottom: 8%; }
-    @media only screen and (orientation: landscape) {
-      .landing__text-box {
-        bottom: 3%; } }
+    bottom: 4%; }
 
 .about {
   width: 100%;

@@ -1,86 +1,87 @@
 .form {
-  display: none;
-    &--active {
-      width: 100%;
-      height: 100%;
-      padding: 1.5rem 1.5rem 1rem 1.5rem;
-      background-color: $color-white;
-      font-size: 1.5rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      border-radius: 1.5rem;
+   display: none;
 
-        @media only screen and (orientation: landscape){
-            height: 140%;
-        }
-    }
+      &--active {
+         width: 100%;
+         height: 100%;
+         padding: 1.5rem 1.5rem 1rem 1.5rem;
+         background-color: $color-white;
+         font-size: 1.5rem;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+         border-radius: 1.5rem;
+
+            @media only screen and (orientation: landscape){
+               height: 140%;
+            }
+      }
 }
 
 .position {
-  display: flex;
-  justify-content: space-around;
+   @include flex(row, space-around);
+  
+      &__radio {
+         position: relative;
+         visibility: hidden;
 
-  &__radio {
-    position: relative;
-    visibility: hidden;
-      &:after {
-        cursor: pointer;
-        visibility: visible;
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -0.5rem;
-        width: 1.5rem;
-        height: 1.5rem;
-        border-radius: 50rem;
-        background: $color-tertiary;
-      }
+            &:after {
+            cursor: pointer;
+            visibility: visible;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -0.5rem;
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50rem;
+            background: $color-tertiary;
+         }
 
-    &:checked:after {
-      cursor: pointer;
-      visibility: visible;
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -0.5rem;
-      width: 1.5rem;
-      height: 1.5rem;
-      border: 0.07rem solid red;
-      background-color: $color-form-items;  
-    }         
-  }
+      &:checked:after {
+         cursor: pointer;
+         visibility: visible;
+         content: '';
+         position: absolute;
+         top: 0;
+         left: -0.5rem;
+         width: 1.5rem;
+         height: 1.5rem;
+         border: 0.07rem solid red;
+         background-color: $color-form-items;  
+      }         
+   }
 }
 
 .input {
-  width: 100%;
-  position: relative;
-   
-    &__field { 
-    outline: none;
-    width: 100%;
-    padding: 0.6rem 2rem 0.5rem 3rem;
-    box-shadow: 0.5rem 0.2rem 1rem rgba($color-tertiary, 0.7);
-    font-size: 1.5rem;
-    border: 0.2rem $color-tertiary solid;
-    border-radius: 0.3rem;
+   width: 100%;
+   position: relative;
+      
+      &__field { 
+      outline: none;
+      width: 100%;
+      padding: 0.6rem 2rem 0.5rem 3rem;
+      box-shadow: 0.5rem 0.2rem 1rem rgba($color-tertiary, 0.7);
+      font-size: 1.5rem;
+      border: 0.2rem $color-tertiary solid;
+      border-radius: 0.3rem;
 
-      &:focus {
-        border: 0.25rem red solid;
-        background: rgba($color-primary, 0.5);
+         &:focus {
+         border: 0.25rem red solid;
+         background: rgba($color-primary, 0.5);
+         }
+
+         &--textarea {
+         font-family: $font-primary;
+         }
       }
 
-      &--textarea {
-        font-family: $font-primary;
-      }
-    }
-
-    &__icon {
-      position: absolute;
-      top: 0.5rem;
-      left: 0.65rem;
-      font-size: 2rem;
-      color:$color-form-items;
-    } 
+      &__icon {
+         position: absolute;
+         top: 0.5rem;
+         left: 0.65rem;
+         font-size: 2rem;
+         color:$color-form-items;
+      } 
 }
 

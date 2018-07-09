@@ -1,203 +1,184 @@
 .nav {
-  position: fixed;
-  top: 0;
-  height: 100%;
-  display: flex; 
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-      
-    &__logo {
-      height: calc(0.85*#{$header-height});
-      padding-left: 1.5rem; 
-      padding-top: 0.25rem;   
+   position: fixed;
+   top: 0;
+   height: 100%;
+   @include flex(row, space-between, center);
+   position: relative;
 
-        @media only screen and (orientation: landscape){
-          height: calc(1.35*#{$header-height});
-        } 
-
-        @media only screen 
-          and (min-device-width: 768px) 
-          and (max-device-width: 1024px) 
-          and (-webkit-min-device-pixel-ratio: 2) {
-            height: calc(0.7*#{$header-height});
-          }
-    } 
+   &__logo {
+      padding-left: 1rem;
+      height: 4rem;
+      widows: 1rem;
+      } 
  
-    &__logo-text {
-      letter-spacing: 0.3rem;
+   &__logo-text {
+      color: $color-logo;
+      font-size: 1.25rem;
+      letter-spacing: 0.15rem;
       padding-left: 0.65rem;
       font-weight: 400;
-      color: $color-logo;
-      font-size: calc(0.22*#{$header-height});
-
-        @media only screen and (orientation: landscape){
-          font-size: calc(0.45*#{$header-height});
-        }
-
-        @media only screen 
-          and (min-device-width: 768px) 
-          and (max-device-width: 1024px) 
-          and (-webkit-min-device-pixel-ratio: 2) {
-            font-size: calc(0.2*#{$header-height});
-        }
-    }
+   }
    
-    &__list {
+   &__list {
       display: none;
                
-    @media only screen and (min-width: $breakpoint-large){
-      list-style-type: none;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      height: 100%;
-    } 
+      @media only screen and (min-width: $breakpoint-large){
+         list-style-type: none;
+         @include flex (row, flex-end);
+         height: 100%;
+      } 
 
-    &--mobile {
-      list-style-type: none;
-      background-image: linear-gradient(
-        to right bottom,
-        rgba($color-primary, 1),
-        rgba($color-secondary, 1),
-        rgba($color-tertiary, 1));
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      width: 100%;
-      position: fixed;
-      top: 0;
-      height: calc(100% + 5.5rem);
-      animation: dropDown 600ms ease-in-out;
-      font-size: 3rem; 
-      padding-top: 25rem; 
+      &--mobile {
+         list-style-type: none;
+         background-image: linear-gradient(
+            to right bottom,
+            rgba($color-primary, 1),
+            rgba($color-secondary, 1),
+            rgba($color-tertiary, 1));
+         text-align: center;
+         width: 100%;
+         position: fixed;
+         top: 0;
+         height: calc(100% + 5.5rem);
+         animation: dropDown 600ms ease-in-out;
+         padding-top: 22rem; 
 
-        @media only screen and (min-height: 800px){
-          padding-top: 30rem;
-        }
-                              
-        @media only screen and (min-width: $breakpoint-large){
-          position: absolute;
-          right:0;
-          background-image: none;
-          max-width: 70%;          
-          display: flex;
-          flex-direction: row;
-          justify-content: flex-end;
-          padding-top: 0;
-          height: 100%;
-          font-size: 2rem;
-          animation: none;
+            @media only screen and (min-height: 640px){
+               padding-top: 27rem;
+            }
 
-        }
+            @media only screen and (min-height: 750px){
+               padding-top: 33rem;
+            }
 
-        @media only screen and (orientation: landscape){
-          padding-top: 8rem;
-        }
-     }
+            @media only screen and (min-height: 850px){
+               padding-top: 40rem;
+            }
+
+            @media only screen and (min-height: 950px){
+               padding-top: 45rem;
+            }
+
+            @media only screen and (min-height: 1050px){
+               padding-top: 50rem;
+            }
+
+            @media only screen and (min-height: 1150px){
+               padding-top: 45rem;
+            }
+
+            @media only screen and (min-height: 1250px){
+               padding-top: 50rem;
+            }
+                                    
+            @media only screen and (min-width: $breakpoint-large){
+               @include flex (row, flex-end);
+               position: absolute;
+               right:0;
+               background-image: none;
+               max-width: 70%;   
+               padding-top: 0;
+               height: 100%;
+               font-size: 2rem;
+               animation: none
+            }
+
+            @media only screen and (orientation: landscape){
+               padding-top: 8rem;
+            }
+      }
    }
+
+   &__link {
+   font-size: 2.75rem;
+   text-decoration: none;
+   color: $color-text-nav;
+   width: 100vw;
+   padding: 0 1rem;
+   animation: moveInLeft 900ms ease-in-out;
+   transition: all 200ms ease-in-out;
  
-    &__item {
-      display: flex;
-      text-align: center;
-             
-        @media only screen and (min-width: $breakpoint-large){
-          margin-left: 1.5rem;
-          height: 100%;
-          display: flex;
-          justify-content: flex-end;
-        }
-    }
- 
-    &__link {
-      text-decoration: none;
-      color: $color-text-nav;
-      width: 100vw;
-      padding: 0 1rem;
-      animation: moveInLeft 900ms ease-in-out;
-      transition: all 200ms ease-in-out;
- 
-        @media only screen and (min-width: $breakpoint-large){
-          width: 100%;
-          display: flex;
-          align-items: center;
-        }
+      @media only screen and (min-width: $breakpoint-large){
+         width: 100%;
+         display: flex;
+         align-items: center;
+      }
      
-        &:hover {
-          background-color: rgba($color-primary, 0.5);
-          transform: scale(1.2);
-        }
+      &:hover {
+         background-color: rgba($color-primary, 0.5);
+         transform: scale(1.2);
+      }
 
-        &:active {
-          background-color: rgba($color-primary, 0.5);
-          transform: scale(1.2);
-          margin-top: 0;
-        }
+      &:active {
+         background-color: rgba($color-primary, 0.5);
+         transform: scale(1.2);
+         margin-top: 0;
+      }
 
-        &--logo {
-          height: $header-height;
-          text-decoration: none;
-          color: black; 
-          display: flex;
-          align-items: center;
-          z-index: 10;
-        }
+      &--logo {
+         text-decoration: none;
+         color: black; 
+         display: flex;
+         align-items: center;
+         z-index: 10;
+      }
     }
  
-    &__toggler {
-      display: block;
-      cursor: pointer;
-      padding: 1.1rem 4rem 1.5rem 0rem;
-      height: $burger-line-height;
-      width: $burger-line-width;
-      text-decoration: none;
-      margin-right: 4%;
-                    
-        @media only screen and (min-width: $breakpoint-large){
-        display: none;
-        }      
-    }
+      &__toggler {
+         display: block;
+         cursor: pointer;
+         height: $burger-line-height;
+         width: $burger-line-width;
+         text-decoration: none;
+         margin-right: 4%;
+                     
+            @media only screen and (min-width: $breakpoint-large){
+               display: none;
+            }      
+      }
  
-    &__burger {
-      content: '';
-      position: absolute;
-      height: $burger-line-height;
-      width: $burger-line-width;
-      background-color: $color-logo;
+      &__burger {
+         content: '';
+         position: absolute;
+         height: $burger-line-height;
+         width: $burger-line-width;
+         background-color: $color-logo;
+         top: 1.5rem;
+         cursor: pointer;
          
-        &::before {
-          content: '';
-          position: absolute;
-          height: $burger-line-height;
-          width: $burger-line-width;
-          background-color: $color-logo;
-          top: -0.9rem;
-          transition: all 275ms ease-in-out;
-        }
+            &::before {
+               content: '';
+               position: absolute;
+               height: $burger-line-height;
+               width: $burger-line-width;
+               background-color: $color-logo;
+               top: -0.9rem;
+               transition: all 275ms ease-in-out;
+            }
  
-        &::after {
-          content: '';
-          position: absolute;
-          height: $burger-line-height;
-          width: $burger-line-width;
-          background-color: $color-logo;
-          bottom: -0.9rem;
-          transition: all 275ms ease-in-out;
-        }
-    }
+            &::after {
+               content: '';
+               position: absolute;
+               height: $burger-line-height;
+               width: $burger-line-width;
+               background-color: $color-logo;
+               bottom: -0.9rem;
+               transition: all 275ms ease-in-out;
+            }
+      }
  
-    &__burger--active {
-      background-color: transparent;
-      animation: burger 400ms forwards;
-      &::before, &::after {
-        top: 0;
+      &__burger--active {
+         background-color: transparent;
+         animation: burger 400ms forwards;
+         &::before, &::after {
+         top: 0;
+         }
+         &::before {
+         transform: rotate(45deg)
+         }
+         &::after {
+         transform: rotate(-45deg)
+         }      
       }
-      &::before {
-        transform: rotate(45deg)
-      }
-      &::after {
-        transform: rotate(-45deg)
-      }      
-    }
 }
  

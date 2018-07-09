@@ -1,83 +1,63 @@
 .heading-primary {
-  color: $color-black;
+   color: $color-logo;
     
-    &--main {
+   &--main {
+      font-family: $font-secondary;
       font-size: 4rem;
       font-weight: 900;
+      margin-left: 3%;
       letter-spacing: 0.10rem;
       display: block;
-      margin-left: 2rem;
-      font-family: $font-secondary;
       animation: moveInRight 2s ease-in-out 200ms;
+   }
 
-        @media only screen and (orientation: landscape){
-          font-size: 2.85rem;
-        }
-
-        @media only screen and (min-width: $breakpoint-medium){
-          font-size: 6rem;
-        }
-    }
-
-    &--sub {
-      display: block;
-      margin-left: 4rem;
-      margin-top: 0.4rem;
+   &--sub {
       font-family: $font-secondary;
-      font-size: 1.65rem;
+      font-size: 1.25rem;
       font-weight: 600;
       letter-spacing: 0.02rem;
+      display: block;
+      margin: 0.2rem 1.5rem 0 0;
+      text-align: right;
       animation: moveInBottom 2s ease-in-out 200ms;
+   }
+}
 
-        @media only screen and (orientation: landscape){
-          font-size: 1.4rem;
-        }
-
-        @media only screen 
-          and (min-device-width: 768px) 
-          and (max-device-width: 1024px) 
-          and (-webkit-min-device-pixel-ratio: 2) {
-            font-size: 2.5rem;
-        } 
-    }
-  }
-
-  
 .heading-secondary {
-  color: $color-black;
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  font-weight: 600;
+   color: $color-black;
+   font-size: 2rem;
+   text-transform: uppercase;
+   font-weight: 600;
 }
 
 .heading-tertiary {
-  color: $color-black;
-  font-size: 2rem;
-  text-transform: uppercase;
-  font-weight: 500;
-    &--form {
-      font-weight: 400;
-      font-style: 1rem;
-    }
+   color: $color-black;
+   font-size: 2rem;
+   text-transform: uppercase;
+   font-weight: 500;
+
+      &--form {
+         font-weight: 400;
+         font-style: 1rem;
+      }
 }
 
 .heading-quaternary {
-  color: $color-black;
-  font-size: 1.75rem;
-  text-transform: uppercase;
-  font-weight: 500;
+   color: $color-black;
+   font-size: 1.75rem;
+   text-transform: uppercase;
+   font-weight: 500;
 }
 
-
 .text-small {
-  color: $color-black;
-  font-size: 1.55rem;
-    &--form {
-      font-size: 1.25rem;
-    }
+   color: $color-black;
+   font-size: 1.55rem;
+      &--form {
+         font-size: 1.25rem;
+      }
 }
 
 .text-xs {
-  color: $color-black;
-  font-size: 1.25rem;
+   color: $color-black;
+   font-size: 1.25rem;
 }

@@ -5,3 +5,28 @@
   justify-content: $justify-content;
   align-items: $align-items;
 }
+
+// Media Query Manager
+// 0 - 600px: Default Phone
+// 600-900px: Tablet portrait
+// 900-1200px: Tablet landscape  
+// 1200-1800: Desktop
+// 1800px + : Big Desktop
+
+@mixin respond ($breakpoint) {
+   @if $breakpoint == tab-port {
+      @media (min-width: 60rem) {@content};
+   }
+
+   @if $breakpoint == tab-lan {
+      @media (min-width: 90rem) {@content};
+   }
+
+   @if $breakpoint == desktop {
+      @media (max-width: 120rem) {@content};
+   }
+
+   @if $breakpoint == desktop-big {
+      @media (max-width: 180rem) {@content};
+   }
+}

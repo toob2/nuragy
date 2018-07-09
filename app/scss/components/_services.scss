@@ -1,61 +1,64 @@
 .services-box {
-  height: 50%;
-  width: 100%;
-  text-align: center; 
-    &:last-child {
-      background-color: $color-primary;
-      padding-top: 2rem;
-    }
-    
-    @media only screen and (orientation: landscape){
-      display: flex;
-      
-    }
+   height: 50%;
+   width: 100%;
+   text-align: center; 
 
-    &__text {
-      height: 50%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 2rem 1rem 0 1rem;
-
-      @media only screen and (orientation: landscape){
-        width: 50%;
-        height: 100%;
-        padding: 0 2rem 0 1rem;
-        order: 1;
+      &:last-child {
+         background-color: $color-primary;
+         padding-top: 2rem;
       }
-    }
-    &__image {
-        &--apply {
-          position: relative;
-          height: 50%;
-          background-image: url(../images/applicant.png);
-          background-size: cover;
-          background-position: left top;
-          @media only screen and (orientation: landscape){
-            background-position: -4rem 0;
-            background-repeat: no-repeat;
-            width: 50%;
-            height: 100%;
-            padding: 0 1rem;
-          }
-        }
-        &--hire {
-          position: relative;
-          height: 50%;
-          background-image: url(../images/hire.png);
-          background-size: cover;
-          background-position: center;
+    
+      @media only screen and (orientation: landscape){
+         @include flex;
+      }
+
+      &__text {
+         height: 50%;
+         @include flex (column, center);
+         padding: 2rem 1rem 0 1rem;
+
             @media only screen and (orientation: landscape){
-              background-position: -1rem 0;
-              background-size: cover;
-              background-repeat: no-repeat;
-              width: 50%;
-              height: 100%;
-              padding: 0 1rem;
-              order: 2;
+               width: 50%;
+               height: 100%;
+               padding: 0 2rem 0 1rem;
+               order: 1;
             }
-        }
     }
+
+      &__image {
+
+         &--apply {
+            position: relative;
+            height: 50%;
+            background-image: url(../images/applicant.png);
+            background-size: cover;
+            background-position: left top;
+
+               @media only screen and (orientation: landscape){
+                  background-position: -4rem 0;
+                  background-repeat: no-repeat;
+                  width: 50%;
+                  height: 100%;
+                  padding: 0 1rem;
+               }
+         }
+
+         &--hire {
+            position: relative;
+            height: 50%;
+            background-image: url(../images/hire.png);
+            background-size: cover;
+            background-position: center;
+
+               @media only screen and (orientation: landscape){
+                  background-position: -1rem 0;
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  width: 50%;
+                  height: 100%;
+                  padding: 0 1rem;
+                  order: 2;
+               }
+         }
+      }
 }

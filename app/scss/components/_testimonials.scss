@@ -4,9 +4,7 @@
    background-image: url(../images/testimonials.jpg);
    background-size: cover;
    background-position: left top;
-   @media only screen and (orientation: landscape){
-      
-    }
+
       &__text {
          text-align: center;
          height: 35%;
@@ -14,4 +12,4 @@
          flex-direction: column;
          justify-content: center;
       }
-   }
+}
