@@ -2,10 +2,10 @@
    display: none;
 
       &--active {
-         @include flex (column, center,center);
+         @include flex (column, space-around, center);
          width: 100%;
          height: 100%;
-         padding: 1.5rem 1.5rem 1rem 1.5rem;
+         padding: 1.5rem 1rem 1rem 1rem;
          background-color: $color-white;
          font-size: 1.5rem;
          // display: flex;
@@ -20,42 +20,45 @@
 }
 
 .position {
-      @include flex(row, center, center);
+   width: 100%;
+   @include flex(row, space-between, center);
 
-         &__wrapper {
-            @include flex (row, center, center);
-         }
-  
-         &__radio {
-            position: relative;
-            visibility: hidden;
-
-               &:after {
-               cursor: pointer;
-               visibility: visible;
-               content: '';
-               position: absolute;
-               top: 0;
-               left: -0.5rem;
-               width: 1.5rem;
-               height: 1.5rem;
-               border-radius: 50rem;
-               background: $color-tertiary;
-            }
-
-            &:checked:after {
-               cursor: pointer;
-               visibility: visible;
-               content: '';
-               position: absolute;
-               top: 0;
-               left: -0.5rem;
-               width: 1.5rem;
-               height: 1.5rem;
-               border: 0.07rem solid red;
-               background-color: $color-form-items;  
-            }         
+      &__wrapper {
+         @include flex(row, space-between, center);
       }
+
+      &__radio {
+         position: relative;
+         visibility: hidden;
+
+            &:after {
+            display: block;
+            cursor: pointer;
+            visibility: visible;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -0.5rem;
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50rem;
+            background: $color-tertiary;
+         }
+
+         &:checked:after {
+            display: block;
+            cursor: pointer;
+            visibility: visible;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -0.5rem;
+            width: 1.5rem;
+            height: 1.5rem;
+            border: 0.07rem solid red;
+            background-color: $color-form-items;  
+         }         
+   }
 }
 
 .input {

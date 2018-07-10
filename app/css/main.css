@@ -357,11 +357,11 @@ header {
   .form--active {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     height: 100%;
-    padding: 1.5rem 1.5rem 1rem 1.5rem;
+    padding: 1.5rem 1rem 1rem 1rem;
     background-color: #fff;
     font-size: 1.5rem;
     border-radius: 1.5rem; }
@@ -370,19 +370,21 @@ header {
         height: 140%; } }
 
 .position {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center; }
   .position__wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center; }
   .position__radio {
     position: relative;
     visibility: hidden; }
     .position__radio:after {
+      display: block;
       cursor: pointer;
       visibility: visible;
       content: '';
@@ -394,6 +396,7 @@ header {
       border-radius: 50rem;
       background: #898b8d; }
     .position__radio:checked:after {
+      display: block;
       cursor: pointer;
       visibility: visible;
       content: '';
