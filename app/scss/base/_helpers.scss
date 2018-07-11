@@ -4,10 +4,6 @@
   display: table;
 }
 
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
 
 // bootstrap container
 .container {
@@ -68,23 +64,24 @@
 }
 
 .hr {
-  &--standard {
-    width: 75%;
-    align-self: center;
-    border: none;
-    height: 0.15rem;
-    opacity: 0.6;
-    background-color: $color-black;
-    }
+   width: 75%;
+   align-self: center;
+   border: none;
+   height: 0.15rem;
+   opacity: 0.6;
+   background-color: $color-black;
 
-  &--short {
-    width: 50%;
-    align-self: center;
-    border: none;
-    height: 0.15rem;
-    opacity: 0.6;
-    background-color: $color-black;
-  }
+      &--short {
+         width: 50%;
+      }
+
+      &--thick {
+         height: 0.75rem;
+      }
+
+      &--red {
+         background-color: red;
+      }
 }  
 
 
