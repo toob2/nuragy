@@ -1,6 +1,12 @@
 .form {
    display: none;
 
+      &__wrapper {
+         width: 100%;
+         @include flex (column, space-around, center);
+
+      }
+
       &--active {
          @include flex (column, space-around, center);
          width: 100%;
