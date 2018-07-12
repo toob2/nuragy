@@ -6,6 +6,18 @@
   align-items: $align-items;
 }
 
+// radio mixin
+@mixin radio {
+   content: '';
+   cursor: pointer;
+   position: absolute;
+   top: 0;
+   left: 0; 
+   width: 1.75rem;
+   height: 1.75rem;
+   border-radius: 50rem;
+}
+
 // Media Query Manager
 // 0 - 600px: Default Phone
 // 600-900px: Tablet portrait

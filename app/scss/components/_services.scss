@@ -6,7 +6,8 @@
    @include flex (column, center);
 
       &__img {
-         height: 30%;
+         width: 25%;
+         animation: heart 2s ease-in-out infinite;
       }
 }
 

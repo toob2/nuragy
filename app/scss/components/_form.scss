@@ -11,83 +11,84 @@
          @include flex (column, space-around, center);
          width: 100%;
          height: 100%;
-         padding: 1.5rem 1rem 1rem 1rem;
-         background-color: $color-white;
+         padding: 1.25rem 0.75rem 1.25rem 0.75rem;
+         background-color: rgba($color-primary, 0.6);
          font-size: 1.5rem;
-         // display: flex;
-         // flex-direction: column;
-         // justify-content: space-around;
-         border-radius: 1.5rem;
-
+         border-radius: 0.5rem;
+   
             @media only screen and (orientation: landscape){
                height: 140%;
             }
       }
 }
 
-.position {
-   width: 100%;
-   @include flex(row, space-between, center);
-
-      &__wrapper {
-         @include flex(row, space-between, center);
+input[type=radio] {
+   appearance: none;
+   -moz-appearance: radio;
+   position: relative;
+   height: 1.75rem;
+   width: 1.75rem;
+   margin: 0;
+   
+      &::before {
+         @include radio;
+         background-color: $color-secondary;
       }
 
-      &__radio {
-         position: relative;
-         visibility: hidden;
+      &::after {
+         @include radio;
+      }
 
-            &:after {
-            display: block;
-            cursor: pointer;
-            visibility: visible;
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -0.5rem;
-            width: 1.5rem;
-            height: 1.5rem;
-            border-radius: 50rem;
-            background: $color-tertiary;
-         }
-
-         &:checked:after {
-            display: block;
-            cursor: pointer;
-            visibility: visible;
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -0.5rem;
-            width: 1.5rem;
-            height: 1.5rem;
-            border: 0.07rem solid red;
-            background-color: $color-form-items;  
-         }         
-   }
+      &:checked::after {
+         @include radio;
+         background-color: $color-form-items;
+         transform: scale(1.075);
+         transition: all 1.75s;
+      }
 }
+
+.radio {
+   width: 100%;
+   @include flex (row, space-evenly);
+
+      &__wrapper {
+         @include flex (row, center, center);
+      }
+
+      &__label {
+         @include flex (row, center, center);
+         padding-left: 1rem;
+      }
+
+      &__span {
+         width: 0.75rem;
+      }
+}
+
 
 .input {
    width: 100%;
    position: relative;
       
       &__field { 
-      outline: none;
-      width: 100%;
-      padding: 0.6rem 2rem 0.5rem 3rem;
-      box-shadow: 0.5rem 0.2rem 1rem rgba($color-tertiary, 0.7);
-      font-size: 1.5rem;
-      border: 0.2rem $color-tertiary solid;
-      border-radius: 0.3rem;
+         outline: none;
+         width: 100%;
+         padding: 0.6rem 2rem 0.5rem 3rem;
+         box-shadow: 0.5rem 0.2rem 1rem rgba($color-secondary, 1);
+         font-size: 1.5rem;
+         border: 0.2rem $color-tertiary solid;
+         border-radius: 0.3rem;
 
-         &:focus {
-         border: 0.25rem red solid;
-         background: rgba($color-primary, 0.5);
-         }
+            &:focus {
+               border: 0.25rem $color-tertiary solid;
+               background-color: rgb(238, 238, 157);
+               font-weight: 500;
+               // transition: background-color 2s;
+            }
 
-         &--textarea {
-         font-family: $font-primary;
-         }
+            &--textarea {
+               font-family: $font-primary;
+            }
       }
 
       &__icon {

@@ -56,18 +56,18 @@
 
       &--submit {
          display: inline-block;
-         font-size: 2rem;
+         font-size: 1.75rem;
          text-transform: uppercase;
-         letter-spacing: 0.15rem;
+         letter-spacing: 0.12rem;
          padding: 1.25rem 1.5rem; 
          max-width: 20rem;
          align-self: center;
          box-shadow: 0.5rem 0.5rem 1rem rgba($color-black, 0.5);
          background-color: $color-form-items;
          color: $color-white;
-         border: 0.07rem red solid;
-         border-radius: 1rem;
-         transition: all 0.2s ease-in-out;
+         border: 0.22rem $color-tertiary solid;
+         border-radius: 1.5rem;
+         transition: all 0.5s ease-in-out;
 
             &:hover {
                background-color: rgb(24, 70, 197);

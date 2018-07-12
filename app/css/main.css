@@ -70,6 +70,14 @@
   100% {
     transform: scale(1); } }
 
+@keyframes heart {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.05); }
+  100% {
+    transform: scale(1); } }
+
 *,
 *::before,
 *::after {
@@ -190,7 +198,7 @@ body {
   color: #2e3135;
   font-size: 1.75rem;
   text-transform: uppercase;
-  font-weight: 300; }
+  font-weight: 600; }
 
 .text-small {
   color: #2e3135;
@@ -301,18 +309,18 @@ header {
 
 .btn--submit {
   display: inline-block;
-  font-size: 2rem;
+  font-size: 1.75rem;
   text-transform: uppercase;
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.12rem;
   padding: 1.25rem 1.5rem;
   max-width: 20rem;
   align-self: center;
   box-shadow: 0.5rem 0.5rem 1rem rgba(46, 49, 53, 0.5);
   background-color: #1b4edb;
   color: #fff;
-  border: 0.07rem red solid;
-  border-radius: 1rem;
-  transition: all 0.2s ease-in-out; }
+  border: 0.22rem #898b8d solid;
+  border-radius: 1.5rem;
+  transition: all 0.5s ease-in-out; }
   .btn--submit:hover {
     background-color: #1846c5;
     transform: translateY(0.1rem); }
@@ -372,52 +380,72 @@ header {
     align-items: center;
     width: 100%;
     height: 100%;
-    padding: 1.5rem 1rem 1rem 1rem;
-    background-color: #fff;
+    padding: 1.25rem 0.75rem 1.25rem 0.75rem;
+    background-color: rgba(238, 238, 238, 0.6);
     font-size: 1.5rem;
-    border-radius: 1.5rem; }
+    border-radius: 0.5rem; }
     @media only screen and (orientation: landscape) {
       .form--active {
         height: 140%; } }
 
-.position {
+input[type=radio] {
+  appearance: none;
+  -moz-appearance: radio;
+  position: relative;
+  height: 1.75rem;
+  width: 1.75rem;
+  margin: 0; }
+  input[type=radio]::before {
+    content: '';
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50rem;
+    background-color: #bfc3c7; }
+  input[type=radio]::after {
+    content: '';
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50rem; }
+  input[type=radio]:checked::after {
+    content: '';
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50rem;
+    background-color: #1b4edb;
+    transform: scale(1.075);
+    transition: all 1.75s; }
+
+.radio {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center; }
-  .position__wrapper {
+  .radio__wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center; }
-  .position__radio {
-    position: relative;
-    visibility: hidden; }
-    .position__radio:after {
-      display: block;
-      cursor: pointer;
-      visibility: visible;
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -0.5rem;
-      width: 1.5rem;
-      height: 1.5rem;
-      border-radius: 50rem;
-      background: #898b8d; }
-    .position__radio:checked:after {
-      display: block;
-      cursor: pointer;
-      visibility: visible;
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -0.5rem;
-      width: 1.5rem;
-      height: 1.5rem;
-      border: 0.07rem solid red;
-      background-color: #1b4edb; }
+  .radio__label {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem; }
+  .radio__span {
+    width: 0.75rem; }
 
 .input {
   width: 100%;
@@ -426,13 +454,14 @@ header {
     outline: none;
     width: 100%;
     padding: 0.6rem 2rem 0.5rem 3rem;
-    box-shadow: 0.5rem 0.2rem 1rem rgba(137, 139, 141, 0.7);
+    box-shadow: 0.5rem 0.2rem 1rem #bfc3c7;
     font-size: 1.5rem;
     border: 0.2rem #898b8d solid;
     border-radius: 0.3rem; }
     .input__field:focus {
-      border: 0.25rem red solid;
-      background: rgba(238, 238, 238, 0.5); }
+      border: 0.25rem #898b8d solid;
+      background-color: #eeee9d;
+      font-weight: 500; }
     .input__field--textarea {
       font-family: "Roboto", sans-serif; }
   .input__icon {
@@ -596,9 +625,10 @@ header {
     position: fixed;
     top: 0%;
     left: 0%;
-    margin: 10% 1%;
-    width: 98%;
-    height: 90%;
+    margin: 10% 0;
+    width: 100%;
+    min-height: 90%;
+    max-height: 90%;
     text-align: center;
     background-color: #fff;
     z-index: 3;
@@ -638,7 +668,8 @@ header {
   justify-content: center;
   align-items: center; }
   .services-range__img {
-    height: 30%; }
+    width: 25%;
+    animation: heart 2s ease-in-out infinite; }
 
 .services-box {
   height: 40%;

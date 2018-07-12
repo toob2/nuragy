@@ -6,9 +6,10 @@
          position: fixed;
          top: 0%;
          left: 0%;
-         margin: 10% 1%;
-         width: 98%;
-         height: 90%;
+         margin: 10% 0;
+         width: 100%;
+         min-height: 90%;
+         max-height: 90%;
          text-align: center;
          background-color: $color-white;
          z-index: 3;

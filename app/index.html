@@ -197,29 +197,25 @@
    </footer>
   
    <section class="section-modal">
-
       <div class="modal">  
          <div class="modal__content">
-
+<!-- form 1 -->
             <form action="" id="form1" class="form">
                <div class="form__wrapper">
-                  <h2 class="heading-tertiary u-margin-bottom-medium">Nurse / Health Care Assistant position</h2>  
-                  <hr class="hr u-margin-bottom-medium">
+                  <h2 class="heading-quaternary u-margin-bottom-small">Nurse / Health Care Assistant position</h2>  
+                  <hr class="hr hr--short u-margin-bottom-small">
                   <p class="text-small u-margin-bottom-small-2x">Please tell us in which position are you interested in and fill in the relevant details:</p>
                </div>
        
-               <div class="form__wrapper">    
-                     <div class="input__wrapper">        
-                        <input class="position__radio" type="radio"  name="account" value="none" checked>
-                        <label for="radioOne">Registered Nurse</label>
-                     </div>
-            
-                     <div class="input__wrapper">
-                        <input class="position__radio" type="radio" name="account" value="none">
-                        <label for="radioOne">Health Care Assistant</label>
-                     </div>
+               <div class="form__wrapper">
+                  <div class="radio">   
+                     <label for="radio1" class="radio__label">     
+                     <input type="radio" name="account" id="radio1" value="none" checked><span class="radio__span"></span>Registered Nurse</label>
+                              
+                     <label for="radio2" class="radio__label" >
+                     <input type="radio" name="account" id="radio2" value="none"><span class="radio__span"></span>Health Care Assistant</label>
+                  </div> 
                </div>
-
 
                <div class="form__wrapper">
                   <div class="input u-margin-bottom-small">
@@ -250,68 +246,67 @@
                      </span>
                   </div>  
                </div>
-         
-               <input type="submit" value="Submit" class="btn--submit">
+               
+               <div class="form__wrapper">
+                  <input type="submit" value="Submit" class="btn--submit">
+               </div>
             </form>
-
+<!-- form-2 -->
             <form action="" id="form2" class="form">
                <div class="form__wrapper">
-                  <h3 class="heading-tertiary u-margin-bottom-small-2x">We supply Qualified Nurses and Healthcare Assistants 24 hours a day, 365 days a  year.</h3>  
-                  <hr class="hr--standard u-margin-bottom-small-2x">
-                  <p class="text-small u-margin-bottom-small">Please tell us the Type of Service you require and fill in the relevant details:</p>
+                  <h3 class="heading-quaternary u-margin-bottom-small-2x">We supply Qualified Nurses and Healthcare Assistants 24 hours a day, 365 days a  year.</h3>  
+                  <hr class="hr hr--short u-margin-bottom-small">
+                  <p class="text-small u-margin-bottom-small-2x">Please tell us the Type of Service you require and fill in the relevant details:</p>
                </div>
 
-                   
-               <div class="form__wrapper">    
-                  <div class="input__wrapper">        
-                     <input class="position__radio" type="radio"  name="account" value="none" checked>
-                     <label for="radioOne">Hospital</label>
-                  </div>
-         
-                  <div class="input__wrapper">
-                     <input class="position__radio" type="radio" name="account" value="none">
-                     <label for="radioOne">Care Home</label>
-                  </div>
+               <div class="form__wrapper">
+                  <div class="radio">   
+                     <label for="radio3" class="radio__label">     
+                     <input type="radio" name="account" id="radio3" value="none" checked><span class="radio__span"></span>Hospital Nursing</label>
+                              
+                     <label for="radio4" class="radio__label" >
+                     <input type="radio" name="account" id="radio4" value="none"><span class="radio__span"></span>Care Home </label>
+                  </div> 
                </div>
-               
+
                <div class="form__wrapper"> 
-               <div class="input u-margin-bottom-small">
-                  <input class="input__field" type="text" name="name" placeholder="Person in Charge" required>
-                  <span class="input__icon">
-                     <i class="fas fa-user"></i>      
-                  </span>
+                  <div class="input u-margin-bottom-small">
+                     <input class="input__field" type="text" name="name" placeholder="Person in Charge" required>
+                     <span class="input__icon">
+                        <i class="fas fa-user"></i>      
+                     </span>
+                  </div>
+
+                  <div class="input u-margin-bottom-small">
+                     <input class="input__field " type="email" name="email" placeholder="Email" required>
+                     <span class="input__icon">
+                        <i class="fas fa-envelope"></i>      
+                     </span>
+                  </div>
+
+                  <div class="input u-margin-bottom-small">
+                     <input class="input__field " type="number" name="contact" placeholder="Contact Number">
+                     <span class="input__icon">
+                        <i class="fas fa-phone"></i>      
+                     </span>
+                  </div>
+
+                  <div class="input u-margin-bottom-small">
+                     <textarea class="input__field input__field--textarea" id="textarea" placeholder="Additional information" name="textarea" cols="30" rows="5"></textarea>
+                     <span class="input__icon">
+                        <i class="fas fa-comments"></i>  
+                     </span>
+                  </div>  
+               </div> 
+
+               <div class="form__wrapper">
+                  <input type="submit" value="Submit" class="btn--submit">
                </div>
-
-               <div class="input u-margin-bottom-small">
-                  <input class="input__field " type="email" name="email" placeholder="Email" required>
-                  <span class="input__icon">
-                     <i class="fas fa-envelope"></i>      
-                  </span>
-               </div>
-
-               <div class="input u-margin-bottom-small">
-                  <input class="input__field " type="number" name="contact" placeholder="Contact Number">
-                  <span class="input__icon">
-                     <i class="fas fa-phone"></i>      
-                  </span>
-               </div>
-
-               <div class="input u-margin-bottom-small">
-                  <textarea class="input__field input__field--textarea" id="textarea" placeholder="Additional information" name="textarea" cols="30" rows="5"></textarea>
-                  <span class="input__icon">
-                     <i class="fas fa-comments"></i>  
-                  </span>
-               </div>  
-            </div> 
-
-               <input type="submit" value="Submit" class="btn--submit">
             </form>
-            </div> 
+         </div> 
          </div>
       <div class="modal-overlay"></div>
    </section>
-
-
 
 
   <script src="js/navigation.js"></script>
@@ -319,7 +314,5 @@
   <script src="js/modal.js"></script>
   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   <script src="js/sr.js"></script>
-
-
 </body>
 </html>
