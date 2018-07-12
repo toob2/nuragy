@@ -58,6 +58,7 @@ input[type=radio] {
       &__label {
          @include flex (row, center, center);
          padding-left: 1rem;
+         // font-size: 1.55rem;
       }
 
       &__span {
@@ -73,9 +74,9 @@ input[type=radio] {
       &__field { 
          outline: none;
          width: 100%;
-         padding: 0.6rem 2rem 0.5rem 3rem;
+         padding: 0.6rem 2rem 0.5rem 3.25rem;
          box-shadow: 0.5rem 0.2rem 1rem rgba($color-secondary, 1);
-         font-size: 1.5rem;
+         font-size: 1.75rem;
          border: 0.2rem $color-tertiary solid;
          border-radius: 0.3rem;
 
@@ -88,12 +89,13 @@ input[type=radio] {
 
             &--textarea {
                font-family: $font-primary;
+               font-size: 1.75rem;
             }
       }
 
       &__icon {
          position: absolute;
-         top: 0.5rem;
+         top: 0.6rem;
          left: 0.65rem;
          font-size: 2rem;
          color:$color-form-items;

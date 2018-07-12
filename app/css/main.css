@@ -202,7 +202,7 @@ body {
 
 .text-small {
   color: #2e3135;
-  font-size: 1.55rem; }
+  font-size: 1.65rem; }
 
 .text-xs {
   color: #2e3135;
@@ -453,9 +453,9 @@ input[type=radio] {
   .input__field {
     outline: none;
     width: 100%;
-    padding: 0.6rem 2rem 0.5rem 3rem;
+    padding: 0.6rem 2rem 0.5rem 3.25rem;
     box-shadow: 0.5rem 0.2rem 1rem #bfc3c7;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     border: 0.2rem #898b8d solid;
     border-radius: 0.3rem; }
     .input__field:focus {
@@ -463,10 +463,11 @@ input[type=radio] {
       background-color: #eeee9d;
       font-weight: 500; }
     .input__field--textarea {
-      font-family: "Roboto", sans-serif; }
+      font-family: "Roboto", sans-serif;
+      font-size: 1.75rem; }
   .input__icon {
     position: absolute;
-    top: 0.5rem;
+    top: 0.6rem;
     left: 0.65rem;
     font-size: 2rem;
     color: #1b4edb; }
