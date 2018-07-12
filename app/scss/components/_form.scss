@@ -3,7 +3,7 @@
 
       &__wrapper {
          width: 100%;
-         @include flex (column, space-around, center);
+         @include flex (column, center);
 
       }
 
