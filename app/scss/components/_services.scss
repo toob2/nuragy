@@ -2,22 +2,21 @@
    height: 20%;
    width: 100%;
    text-align: center;
-   padding-top: 4rem;
+   padding-top: 3rem;
    @include flex (column, center);
 
       &__img {
          width: 25%;
-         animation: heart 2s ease-in-out infinite;
+         animation: heart 1.5s ease-in-out infinite;
       }
 }
-
 
 .services-box {
    height: 40%;
    width: 100%;
    text-align: center; 
 
-      &:last-child {
+      &:first-child {
          background-color: $color-primary;
          padding-top: 2rem;
       }
