@@ -40,39 +40,15 @@
     }
 
       &__image {
+         width: 100%;
 
-         &--apply {
-            position: relative;
-            height: 50%;
-            background-image: url(../images/applicant.png);
-            background-size: cover;
-            background-position: left top;
+            &--apply {
+              height: 100%;
+            }
 
-               @media only screen and (orientation: landscape){
-                  background-position: -4rem 0;
-                  background-repeat: no-repeat;
-                  width: 50%;
-                  height: 100%;
-                  padding: 0 1rem;
-               }
-         }
-
-         &--hire {
-            position: relative;
-            height: 50%;
-            background-image: url(../images/hire.png);
-            background-size: cover;
-            background-position: center;
-
-               @media only screen and (orientation: landscape){
-                  background-position: -1rem 0;
-                  background-size: cover;
-                  background-repeat: no-repeat;
-                  width: 50%;
-                  height: 100%;
-                  padding: 0 1rem;
-                  order: 2;
-               }
-         }
+            &--hire {
+               height: 100%;
+               width: 100%;
+            }
       }
 }

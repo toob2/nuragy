@@ -6,12 +6,43 @@
   align-items: $align-items;
 }
 
+// button style
+@mixin button($color,$background) {
+   display: inline-block;
+   text-transform: uppercase;
+   text-decoration: none;
+   border-radius: 100rem;
+   align-self: center;
+   font-size: 1.75rem;
+   padding: 1.5rem 3rem; 
+   background-color: $background;
+   color: $color;
+   font-weight: 500;
+   box-shadow: 1rem 1rem 3rem rgba(black, 0.45);
+   transition: all 0.5s ease-in-out;
+   -webkit-appearance: none;
+
+      &:hover {
+         transform: translateY(0.15rem);
+         box-shadow: 0.75rem 0.75rem 1.75rem rgba(black, 0.45);
+         background-color: darken($background, 10%);
+      }
+
+      &:active {
+         transform: translateY(0.25rem);
+         box-shadow: 0.6rem 0.6rem 1.75rem rgba(black, 0.45);
+         outline: none;
+      }
+
+}
+
 // radio mixin
 @mixin radio {
+   visibility: visible;
    content: '';
    cursor: pointer;
    position: absolute;
-   top: 0;
+   top: -0.2rem;
    left: 0; 
    width: 1.75rem;
    height: 1.75rem;

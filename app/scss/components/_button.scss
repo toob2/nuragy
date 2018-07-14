@@ -1,84 +1,13 @@
 .btn {
-   &:link,
-   &:visited {
-      display: inline-block;
-      color: $color-logo;
-      font-size: $font-size-default;
-      font-weight: 500;
-      text-transform: uppercase;
-      text-decoration: none;
-      padding: 1.5rem 3rem; 
-      border-radius: 100rem;
-      max-width: 20rem;
-      align-self: center;
-      transition: all 200ms;
-      box-shadow: 1rem 1rem 2rem rgba($color-tertiary, 0.8);
-   }
-
-      &:hover {
-         transform: translateY(0.1rem);
-         box-shadow: 0.9rem 0.9rem 1.85rem rgba($color-tertiary, 0.8);
-      }
-
-      &:active {
-         box-shadow: 0.75rem 0.75rem 1.5rem rgba($color-tertiary, 0.8);
-      }
-
-      &--apply {
-         background-color: red;
-         position: absolute;
-         bottom: 50%;
-         right: 5%;
-
-            @media only screen and (orientation: landscape){
-               bottom: 50%;
-               right: 5%;
-            }
-
-            @media only screen 
-               and (min-device-width: 768px) 
-               and (max-device-width: 1024px) 
-               and (-webkit-min-device-pixel-ratio: 2){
-                  right: 12%;
-            } 
-    }
-
-      &--hire {
-         background-color: red;
-         position: absolute;
-         bottom: 40%;
-         left: 2%;
-            @media only screen and (orientation: landscape){
-               bottom: 40%;
-               left: 0;
-            }
-      }
-
+   @include button ($color-white, $color-tertiary);
+  
       &--submit {
-         display: inline-block;
-         font-size: 1.75rem;
-         text-transform: uppercase;
-         letter-spacing: 0.12rem;
-         padding: 1.25rem 1.5rem; 
-         max-width: 20rem;
-         align-self: center;
-         box-shadow: 0.5rem 0.5rem 1rem rgba($color-black, 0.5);
-         background-color: $color-form-items;
-         color: $color-white;
-         border: 0.22rem $color-tertiary solid;
-         border-radius: 1.5rem;
-         transition: all 0.5s ease-in-out;
+         @include button ($color-white, $color-form-items);
+      }
 
-            &:hover {
-               background-color: rgb(24, 70, 197);
-               transform: translateY(0.1rem);
-            }
+      &--red {
+         @include button ($color-white, $color-red);
 
-            &:active {
-               outline: none;
-               transform: translateY(0.2rem);
-               box-shadow: 0.3rem 0.3rem 1rem rgba($color-black, 0.7);
-            }
       }
 }
   

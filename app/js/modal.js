@@ -1,5 +1,5 @@
-const btnHire = document.querySelector('.btn--hire');
-const btnApply = document.querySelector('.btn--apply');
+const btnHire = document.querySelector('#btn--hire');
+const btnApply = document.querySelector('#btn--apply');
 let modal = document.querySelector('.modal');
 let modalOverlay = document.querySelector('.modal-overlay');
 let form1 = document.querySelector('#form1');

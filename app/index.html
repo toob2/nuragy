@@ -27,7 +27,9 @@
          </ul> 
          
          <a href="#!" class="nav__toggler">
-         <span class="nav__burger"></span>
+            <div class="nav__toggler-wrapper">
+            <span class="nav__burger"></span>
+            </div>
          </a>
       </nav>
    </header>
@@ -72,20 +74,24 @@
 
       <div class="services-box">
          <div class="services-box__text">
-         <h2 class="heading-secondary heading-secondary--sub u-margin-bottom-small-2x">
-            For Candidates
-         </h2>
-         <hr class="hr hr--short u-margin-bottom-small-2x">
-         <h3 class="heading-tertiary u-margin-bottom-medium">
-            By joining us you will quickly find out just how easy a job search can be!
-         </h3>
-         <hr class="hr hr--short u-margin-bottom-small-2x">
-         <p class="text-small">
+            <h2 class="heading-secondary heading-secondary--sub u-margin-bottom-small-2x">
+               For Candidates
+            </h2>
+            <hr class="hr hr--short u-margin-bottom-small-2x">
+            <h3 class="heading-tertiary u-margin-bottom-medium">
+               By joining us you will quickly find out just how easy a job search can be!
+            </h3>
+            <hr class="hr hr--short u-margin-bottom-small-2x">
+            <p class="text-small">
                Our team of experts can help connect you with jobs at the best hospitals in your area. We help nurses find freelance assignments, temp-to-perm opportunities and full-time roles. We’ll even prepare you for your interviews and help you negotiate an offer when the time is right.
-         </p>
+            </p>
          </div>
-         <div class="services-box__image--apply">
-            <a href="#!" class="btn btn--apply">Apply online</a>
+
+         <div class="services-box__image">
+               <!-- the last size is the default 300px -->
+               <img srcset="images/apply.jpg 425w, images/apply2x.jpg 800w"
+                    sizes="(min-width:425px) 70vw, (min-width:800px) 75vw, 300px">     
+            <a href="#!" class="btn" id="btn--apply">Apply online</a>
          </div>      
       </div>
       
@@ -104,7 +110,7 @@
             </p>
          </div>
          <div class="services-box__image--hire">
-            <a href="#!" class="btn btn--hire">Request Staff</a>
+            <a href="#!" class="btn" id="btn--hire">Request Staff</a>
          </div> 
       </div>
    </section>

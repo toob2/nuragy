@@ -82,10 +82,6 @@
                font-size: 2rem;
                animation: none
             }
-
-            @media only screen and (orientation: landscape){
-               padding-top: 8rem;
-            }
       }
    }
 
@@ -125,9 +121,9 @@
     }
  
       &__toggler {
-         display: block;
+         display: inline-block;
          cursor: pointer;
-         height: $burger-line-height;
+         height: 3rem;
          width: $burger-line-width;
          text-decoration: none;
          margin-right: 4%;
@@ -136,7 +132,14 @@
                display: none;
             }      
       }
- 
+      
+      &__toggler-wrapper {
+         height: 3rem;
+         width: $burger-line-width;
+         position: absolute;
+         top: 0;
+      }
+
       &__burger {
          content: '';
          position: absolute;
