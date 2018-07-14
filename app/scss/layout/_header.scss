@@ -6,8 +6,12 @@ header {
    top: 0.3rem;
    left: 0;
    color: $color-logo;
-   padding-top: 0.5rem;
+   padding-top: 0.75rem;
    z-index: 5;
+
+      @include media (mobile-lan) {
+         padding: 1rem 0 0 1rem;
+      }
 }
 
 .header--closed {

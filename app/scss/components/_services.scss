@@ -1,53 +1,49 @@
 .services-range {
    height: 20%;
-   width: 100%;
-   text-align: center;
-   padding-top: 3rem;
+   @include box-style;
    @include flex (column, center);
 
       &__img {
-         width: 25%;
+         width: 35%;
          animation: heart 1.5s ease-in-out infinite;
       }
 }
 
 .services-box {
-   height: 40%;
-   width: 100%;
-   text-align: center; 
+   @include box-style;
 
-      &:first-child {
-         background-color: $color-primary;
-         padding-top: 2rem;
-      }
-    
-      @media only screen and (orientation: landscape){
-         @include flex;
-      }
-
-      &__text {
-         height: 50%;
-         @include flex (column, center);
-         padding: 2rem 1rem 0 1rem;
-
-            @media only screen and (orientation: landscape){
-               width: 50%;
-               height: 100%;
-               padding: 0 2rem 0 1rem;
-               order: 1;
+      &__btn-wrapper {
+            &--1 {
+               position: absolute;
+               top: 30%;
+               right: 5%;
             }
-    }
+
+            &--2 {
+               position: absolute;
+               top: 40%;
+               left: 5%;
+            }
+      }
+   
+      &__text {
+         @include flex (column, space-evenly);
+         padding: 1.5rem;
+      }
 
       &__image {
          width: 100%;
-
+         position: relative;
             &--apply {
-              height: 100%;
-            }
-
-            &--hire {
-               height: 100%;
-               width: 100%;
+               max-width: 100%;
             }
       }
+
+        
 }
+
+
+
+
+   
+   

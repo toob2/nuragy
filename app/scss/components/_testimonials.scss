@@ -1,15 +1,52 @@
 .testimonials-box {
+   @include box-style;
+   @include flex (column, center);
    height: 100%;
-   width: 100%;
    background-image: url(../images/testimonials.jpg);
    background-size: cover;
    background-position: left top;
 
       &__text {
-         text-align: center;
-         height: 35%;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
+         height: 20%;
+         @include flex (column, center);
       }
 }
+
+.slide {
+   height: 80%;
+   width: 80%;
+   margin: 0 auto;
+   position: relative;
+   list-style-type: none;
+   background-color: rgba($color-white, 0.7);
+   text-align: center;
+
+      &__icon {
+         position: absolute;
+         top: -5%;
+         left: 2%;
+      }
+
+      &__item {
+         @include flex (column, center);
+         height: 100%;
+         padding: 0 1rem 0 1rem;
+         position: absolute;
+         top: 0;
+         left: 0;
+         opacity: 0;
+         z-index: 1;
+         transition: all 1.5s;
+
+            &--showing {
+               opacity: 1;
+               z-index: 2;
+            }
+      }
+
+      &__item-wrapper {
+         width: 100%;
+         @include flex (row, flex-end)
+      }
+}
+

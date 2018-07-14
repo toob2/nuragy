@@ -46,31 +46,33 @@
    <section class="about" id="about">
       <div class="about-box">
          <div class="about-box__text">
-            <h2 class="heading-secondary u-margin-bottom-medium">About Us</h2>
-            <div class="hr hr--short u-margin-bottom-medium">
+            <h2 class="heading-secondary u-margin-bottom-small-2x">About Us</h2>
+            <div class="hr hr--short u-margin-bottom-small-2x">
             </div>
             <p class="text-small">
                We are a health care provider specialising in high end Health Care Assistants and Registered Nurses to a wide range of health institutions. We use our knowledge to recruit only the best and most suitable candidates. Our clients trust us to place the right staff in the right roles with many requests coming at short notice.
             </p>
          </div>
+
          <div class="about-box__image">
-         <div class="about-box__text-box">
-            <p class="text-xs">
-               We have been dedicated to recruiting top quality healthcare workers since 1929.
-            </p>
-         </div>
+            <img src="images/historical.jpg" alt="historical" class="about-box__image--historical">
+            <div class="about-box__text-box">
+               <p class="text-xs">
+                  We have been dedicated to recruiting top quality healthcare workers since 1929.
+               </p>
+            </div>
          </div>
       </div>
    </section>
   
    <section class="services" id="services">
-      <div class="services-range">
+      <div class="services-range u-margin-bottom-medium">
          <h2 class="heading-secondary u-margin-bottom-medium">Our services:</h2>
          <div class="hr hr--short u-margin-bottom-xs"></div>
          <div class="hr hr--short hr--thick hr--red u-margin-bottom-medium"></div>
          <img src="images/heart.svg" alt="" class="services-range__img u-margin-bottom-medium">
          <div class="hr hr--short u-margin-bottom-xs"></div>
-         <div class="hr hr--short hr--thick hr--red u-margin-bottom-small"></div>
+         <div class="hr hr--short hr--thick hr--red u-margin-bottom-small-2x"></div>
       </div>
 
       <div class="services-box">
@@ -79,20 +81,21 @@
                For Candidates
             </h2>
             <div class="hr hr--short u-margin-bottom-small-2x"></div>
-            <h3 class="heading-tertiary u-margin-bottom-medium">
+            <h3 class="heading-tertiary u-margin-bottom-small-2x">
                By joining us you will quickly find out just how easy a job search can be!
             </h3>
             <div class="hr hr--short u-margin-bottom-small-2x"></div>
-            <p class="text-small">
+            <p class="text-small u-margin-bottom-small-2x">
                Our team of experts can help connect you with jobs at the best hospitals in your area. We help nurses find freelance assignments, temp-to-perm opportunities and full-time roles. We’ll even prepare you for your interviews and help you negotiate an offer when the time is right.
             </p>
          </div>
 
          <div class="services-box__image">
-               <!-- the last size is the default 300px -->
-               <img srcset="images/apply.jpg 425w, images/apply2x.jpg 800w"
-                    sizes="(min-width:425px) 70vw, (min-width:800px) 75vw, 300px">     
-            <a href="#!" class="btn" id="btn--apply">Apply online</a>
+               <img src="images/apply-tr-2x.png" class="services-box__image--apply"> 
+               <div class="services-box__btn-wrapper--1">
+                  <a href="#!" class="btn--red" id="btn--apply">Apply online
+                  </a>
+               </div> 
          </div>      
       </div>
       
@@ -105,24 +108,28 @@
             <h3 class="heading-tertiary u-margin-bottom-small-2x">
                Hire the right staff faster and efficiently!
             </h3>
-            <div class="hr hr--short u-margin-bottom-medium"></div>
-            <p class="text-small u-margin-bottom-medium">
+            <div class="hr hr--short u-margin-bottom-small-2x"></div>
+            <p class="text-small u-margin-bottom-small-2x">
                Whether you’re looking for a temporary or a permanent nurse for your team, we can make the process easy by connecting you to a network of qualified nurses and carers in your area. Don’t waste valuable time and resources trying to do it yourself, we can help.
             </p>
          </div>
-         <div class="services-box__image--hire">
-            <a href="#!" class="btn" id="btn--hire">Request Staff</a>
-         </div> 
+
+         <div class="services-box__image">
+            <img src="images/hire-tr-2x.png" class="services-box__image--apply"> 
+            <div class="services-box__btn-wrapper--2">
+               <a href="#!" class="btn--red" id="btn--hire">Request Staff</a>
+            </div> 
+         </div>      
       </div>
    </section>
 
    <section class="testimonials" id="testimonials">
       <div class="testimonials-box">
-         <div class="testimonials-box__text">
-            <h2 class="heading-secondary u-margin-bottom-medium">
+         <div class="testimonials-box__text ">
+            <h2 class="heading-secondary u-margin-bottom-small-2x">
                Testimonials
             </h2>
-            <div class="hr hr--short u-margin-bottom-medium"></div>
+            <div class="hr"></div>
          </div>  
       
          <ul class="slide">
@@ -134,9 +141,11 @@
                <p class="text-small u-margin-bottom-medium">
                   A breath of fresh air in the recruitment world – I would recommend Nursing agency to anyone looking for a perm/temp role.
                   </p>
-               <blockquote class="text-xs u-right-text">
-                  Alexandra - Registered Nurse, Newquay
-               </blockquote>
+               <div class="slide__item-wrapper">
+                  <blockquote class="text-xs u-right-text">
+                     Peter - Health Care Assistant, Newcastle
+                  </blockquote>
+               </div>
             </li>
 
             <li class="slide__item">
@@ -147,9 +156,11 @@
                <p class="text-small u-margin-bottom-medium">
                   Nursing Agency have been very pro active and supportive throughout the recruitment process and I will always remember that. Would be happy to recommend them to any of my colleagues without hesitation.
                </p>
-               <blockquote class="text-xs u-right-text">
-                  David - Care Assistant, Bristol
-               </blockquote>
+               <div class="slide__item-wrapper">
+                  <blockquote class="text-xs u-right-text">
+                     Aleksandra - Nurse, Torquay
+                  </blockquote>
+               </div>
             </li> 
 
             <li class="slide__item">
@@ -160,9 +171,11 @@
                <p class="text-small u-margin-bottom-medium">
                   Every time I had a position to fill, the candidates put forward by Nursing Agency turned out to be the best for the job.  Thanks a lot - You made my life so much easier on so many locations.
                </p>
-               <blockquote class="text-xs u-right-text">
-                  Raphael - NHS Manager, London
-               </blockquote>
+               <div class="slide__item-wrapper">
+                  <blockquote class="text-xs u-right-text">
+                     Raphael - NHS Manager, London
+                  </blockquote>
+               </div>
             </li>
          </ul>
       </div>
@@ -214,7 +227,7 @@
                   <p class="text-small u-margin-bottom-small-2x">Please tell us in which position are you interested in and fill in the relevant details:</p>
                </div>
        
-               <div class="form__wrapper text-small">
+               <div class="form__wrapper text-small u-margin-bottom-small">
                   <div class="radio">   
                      <label for="radio1" class="radio__label">     
                      <input type="radio" name="account" id="radio1" value="none" checked><span class="radio__span"></span>Registered Nurse</label>
@@ -266,7 +279,7 @@
                   <p class="text-small u-margin-bottom-small-2x">Please tell us the Type of Service you require and fill in the relevant details:</p>
                </div>
 
-               <div class="form__wrapper text-small">
+               <div class="form__wrapper text-small u-margin-bottom-small">
                   <div class="radio">   
                      <label for="radio3" class="radio__label">     
                      <input type="radio" name="account" id="radio3" value="none" checked><span class="radio__span"></span>Hospital Nursing</label>

@@ -12,21 +12,13 @@ html {
    // font-family: 'Roboto', sans-serif;
    font-family: $font-primary;
 
-   // @include respond (tab-port){
-   //    font-size: 70%;
-   // }
+      @include media (mobile-lan) {
+         font-size: 68%;
+      }
 
-   // @include respond (tab-port){
-   //    font-size: 75%;
-   // }
 
-   // @include respond (desktop){
-   //    font-size: 80%;
-   // }
 
-   // @include respond (desktop-big){
-   //    font-size: 90%;
-   // }
+   
 }
 
 body {

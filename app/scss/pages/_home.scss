@@ -7,7 +7,12 @@
    background-repeat: no-repeat;
    position: relative;
 
-      @media only screen and (orientation: landscape){
+      @include media (mobile-med-lan) {
+         background-image: url(../images/mainLandscape.jpg);
+         background-size: cover;
+      }
+
+      @include media (mobile-lg-lan) {
          background-image: url(../images/mainLandscape.jpg);
          background-size: cover;
       }
@@ -19,31 +24,33 @@
          width: 100%;
          bottom: 4%;
          animation: appear 1s ease-in-out;
+
+            @include media (mobile-med-lan) {
+               padding: 1rem 20% 1rem 10%;
+            }
+
+            @include media (mobile-lg-lan) {
+               padding: 1rem 40% 1rem 10%;
+            }
       }
 }
 
 .about {
    width: 100%;
-   height: 120%;
-   
-      @media only screen and (orientation: landscape){
-         height: 150%;
-      }
 }
 
 .services {
    width: 100%;
-   height: 300%;
 }
 
 .testimonials {
-   height: 80%;  
-   margin-bottom: 5rem;
+   height: 90%;  
+   margin-bottom: 7rem;
 
-      @media only screen and (orientation: landscape){
-         height: 130%;
-         margin-bottom: 0;
-      }
+      @include media (mobile-lan) {
+            height: 130%;
+            margin-bottom: 0;
+         }
 }
 
 

@@ -43,6 +43,10 @@
          animation: dropDown 600ms ease-in-out;
          padding-top: 22rem; 
 
+            @media only screen and (orientation: landscape){
+               padding-top: 10rem;
+            }
+
             @media only screen and (min-height: 640px){
                padding-top: 27rem;
             }
@@ -81,6 +85,10 @@
                height: 100%;
                font-size: 2rem;
                animation: none
+            }
+
+            @include media (mobile-lan) {
+               margin-left: -1rem;
             }
       }
    }
