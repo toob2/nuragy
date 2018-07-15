@@ -28,18 +28,28 @@
                   right: 15%;
                   transform: scale(1.35);
                }
+
+               @include media (tab-small) {
+                  right: 10%;
+                  transform: scale(1.3);
+               }
          }
 
             &--2 {
                position: absolute;
                top: 40%;
-               left: 5%;
+               left: 2%;
 
                   @include media (mobile-med-lan) {
                      transform: scale(1.15);
                   }
 
                   @include media (mobile-lg-lan) {
+                     transform: scale(1.25);
+                  }
+
+                  @include media (tab-small) {
+                     left: 7%;
                      transform: scale(1.25);
                   }
             }

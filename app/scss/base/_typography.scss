@@ -58,12 +58,16 @@
    color: $color-black;
    font-size: 1.25rem;
 
-   @include media (mobile-med-lan) {
-      font-size: 1.5rem;
-   }
+      @include media (mobile-med-lan) {
+         font-size: 1.5rem;
+      }
 
-   @include media (mobile-lg-lan) {
-      font-size: 1.75rem;
-   }
+      @include media (mobile-lg-lan) {
+         font-size: 1.75rem;
+      }
+
+      @include media (tab-small) {
+         font-size: 1.75rem;
+      }
       
 }

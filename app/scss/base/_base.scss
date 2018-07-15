@@ -16,6 +16,10 @@ html {
          font-size: 68%;
       }
 
+      @include media (tab-small) {
+         font-size: 85%;
+      }
+
 
 
    

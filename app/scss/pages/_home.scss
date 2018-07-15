@@ -32,6 +32,10 @@
             @include media (mobile-lg-lan) {
                padding: 1rem 40% 1rem 10%;
             }
+
+            @include media (tab-small) {
+               padding: 1rem 30% 1rem 5%;
+            }
       }
 }
 

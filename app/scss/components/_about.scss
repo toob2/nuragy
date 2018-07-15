@@ -32,6 +32,6 @@
          transform: translateX(-50%);  
          @include flex (column, center); 
          border: 0.1rem solid $color-primary;
-         border-radius: 0.4rem;    
+         border-radius: 0.4rem;   
       }
 }           
