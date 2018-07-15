@@ -17,6 +17,16 @@
          border-radius: 1rem;
          transform: scale(0);
          animation: zoomIn .6s 1.2s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+
+            @include media (mobile-med-lan) {
+               margin: 1.5rem 0 1.5rem 0;   
+               height: 100%;   
+            }  
+
+            @include media (mobile-lg-lan) {
+               margin: 1.75rem 0 1.75rem 0;
+               height: 100%;
+            }
       }
       
       &__content {
@@ -43,6 +53,12 @@
          z-index: 2;
          background-color: rgba($color-secondary, 0.8);
          animation: unfoldIn 1.5s cubic-bezier(0.250, 0.840, 0.440, 1.000) forwards;
+
+
+         // @include media (mobile-lg-lan) {
+         //    right: 15%;
+         //    transform: scale(1.35);
+         // }
       }
 }
 

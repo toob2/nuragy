@@ -46,6 +46,7 @@
 
       &__item-wrapper {
          width: 100%;
+         padding-right: 2rem;
          @include flex (row, flex-end)
       }
 }

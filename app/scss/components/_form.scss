@@ -16,9 +16,15 @@
          font-size: 1.5rem;
          border-radius: 0.5rem;
    
-            @media only screen and (orientation: landscape){
-               height: 140%;
-            }
+         @include media (mobile-med-lan) {  
+            height: 200%;   
+            padding: 1.5rem;
+         }  
+
+         @include media (mobile-lg-lan) {
+            height: 175%;
+            padding: 2rem;
+         }
       }
 }
 
@@ -58,7 +64,6 @@ input[type=radio] {
       &__label {
          @include flex (row, center, center);
          padding-left: 1rem;
-         // font-size: 1.55rem;
       }
 
       &__span {
@@ -84,7 +89,6 @@ input[type=radio] {
                border: 0.25rem $color-tertiary solid;
                background-color: rgb(238, 238, 157);
                font-weight: 500;
-               // transition: background-color 2s;
             }
 
             &--textarea {
@@ -99,6 +103,9 @@ input[type=radio] {
          left: 0.65rem;
          font-size: 2rem;
          color:$color-form-items;
-      } 
-}
 
+            @include media (mobile-lan) {
+               top: 0.75rem;
+            } 
+      }
+}

@@ -89,6 +89,9 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   font-family: "Roboto", sans-serif; }
+  @media only screen and (orientation: landscape) {
+    html {
+      font-size: 68%; } }
 
 body {
   position: absolute;
@@ -207,6 +210,12 @@ body {
 .text-xs {
   color: #2e3135;
   font-size: 1.25rem; }
+  @media only screen and (orientation: landscape) and (max-width: 600px) {
+    .text-xs {
+      font-size: 1.5rem; } }
+  @media only screen and (orientation: landscape) and (min-width: 600px) {
+    .text-xs {
+      font-size: 1.75rem; } }
 
 header {
   height: 4rem;
@@ -218,6 +227,9 @@ header {
   color: #324050;
   padding-top: 0.75rem;
   z-index: 5; }
+  @media only screen and (orientation: landscape) {
+    header {
+      padding: 1rem 0 0 1rem; } }
 
 .header--closed {
   display: none; }
@@ -380,9 +392,14 @@ header {
     background-color: rgba(238, 238, 238, 0.6);
     font-size: 1.5rem;
     border-radius: 0.5rem; }
-    @media only screen and (orientation: landscape) {
+    @media only screen and (orientation: landscape) and (max-width: 600px) {
       .form--active {
-        height: 140%; } }
+        height: 200%;
+        padding: 1.5rem; } }
+    @media only screen and (orientation: landscape) and (min-width: 600px) {
+      .form--active {
+        height: 175%;
+        padding: 2rem; } }
 
 input[type=radio] {
   visibility: hidden;
@@ -470,6 +487,9 @@ input[type=radio] {
     left: 0.65rem;
     font-size: 2rem;
     color: #1b4edb; }
+    @media only screen and (orientation: landscape) {
+      .input__icon {
+        top: 0.75rem; } }
 
 .modal {
   display: none; }
@@ -489,6 +509,14 @@ input[type=radio] {
     border-radius: 1rem;
     transform: scale(0);
     animation: zoomIn 0.6s 1.2s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
+    @media only screen and (orientation: landscape) and (max-width: 600px) {
+      .modal--active {
+        margin: 1.5rem 0 1.5rem 0;
+        height: 100%; } }
+    @media only screen and (orientation: landscape) and (min-width: 600px) {
+      .modal--active {
+        margin: 1.75rem 0 1.75rem 0;
+        height: 100%; } }
   .modal__content {
     height: 100%;
     width: 100%;
@@ -550,8 +578,13 @@ input[type=radio] {
       height: calc(100% + 5.5rem);
       animation: dropDown 600ms ease-in-out;
       padding-top: 22rem; }
-      @media only screen and (orientation: landscape) {
+      @media only screen and (orientation: landscape) and (max-width: 600px) {
         .nav__list--mobile {
+          margin-left: -1rem;
+          padding-top: 8rem; } }
+      @media only screen and (orientation: landscape) and (min-width: 600px) {
+        .nav__list--mobile {
+          margin-left: -1rem;
           padding-top: 10rem; } }
       @media only screen and (min-height: 640px) {
         .nav__list--mobile {
@@ -673,7 +706,7 @@ input[type=radio] {
   justify-content: center;
   align-items: center; }
   .services-range__img {
-    width: 35%;
+    width: 10rem;
     animation: heart 1.5s ease-in-out infinite; }
 
 .services-box {
@@ -684,10 +717,24 @@ input[type=radio] {
     position: absolute;
     top: 30%;
     right: 5%; }
+    @media only screen and (orientation: landscape) and (max-width: 600px) {
+      .services-box__btn-wrapper--1 {
+        right: 10%;
+        transform: scale(1.2); } }
+    @media only screen and (orientation: landscape) and (min-width: 600px) {
+      .services-box__btn-wrapper--1 {
+        right: 15%;
+        transform: scale(1.35); } }
   .services-box__btn-wrapper--2 {
     position: absolute;
     top: 40%;
     left: 5%; }
+    @media only screen and (orientation: landscape) and (max-width: 600px) {
+      .services-box__btn-wrapper--2 {
+        transform: scale(1.15); } }
+    @media only screen and (orientation: landscape) and (min-width: 600px) {
+      .services-box__btn-wrapper--2 {
+        transform: scale(1.25); } }
   .services-box__text {
     display: flex;
     flex-direction: column;
@@ -749,6 +796,7 @@ input[type=radio] {
       z-index: 2; }
   .slide__item-wrapper {
     width: 100%;
+    padding-right: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -793,3 +841,7 @@ input[type=radio] {
 .testimonials {
   height: 90%;
   margin-bottom: 7rem; }
+  @media only screen and (orientation: landscape) {
+    .testimonials {
+      height: 130%;
+      margin-bottom: 0; } }

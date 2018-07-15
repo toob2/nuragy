@@ -4,7 +4,7 @@
    @include flex (column, center);
 
       &__img {
-         width: 35%;
+         width: 10rem;
          animation: heart 1.5s ease-in-out infinite;
       }
 }
@@ -13,16 +13,35 @@
    @include box-style;
 
       &__btn-wrapper {
-            &--1 {
-               position: absolute;
-               top: 30%;
-               right: 5%;
-            }
+         
+         &--1 {
+            position: absolute;
+            top: 30%;
+            right: 5%;
+
+               @include media (mobile-med-lan) {
+                  right: 10%;
+                  transform: scale(1.2);
+               }
+
+               @include media (mobile-lg-lan) {
+                  right: 15%;
+                  transform: scale(1.35);
+               }
+         }
 
             &--2 {
                position: absolute;
                top: 40%;
                left: 5%;
+
+                  @include media (mobile-med-lan) {
+                     transform: scale(1.15);
+                  }
+
+                  @include media (mobile-lg-lan) {
+                     transform: scale(1.25);
+                  }
             }
       }
    
@@ -34,12 +53,11 @@
       &__image {
          width: 100%;
          position: relative;
+
             &--apply {
                max-width: 100%;
             }
-      }
-
-        
+      }  
 }
 
 

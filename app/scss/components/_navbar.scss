@@ -43,7 +43,13 @@
          animation: dropDown 600ms ease-in-out;
          padding-top: 22rem; 
 
-            @media only screen and (orientation: landscape){
+            @include media (mobile-med-lan) {
+               margin-left: -1rem;
+               padding-top: 8rem;
+            }
+
+            @include media (mobile-lg-lan) {
+               margin-left: -1rem;
                padding-top: 10rem;
             }
 
@@ -87,9 +93,7 @@
                animation: none
             }
 
-            @include media (mobile-lan) {
-               margin-left: -1rem;
-            }
+           
       }
    }
 

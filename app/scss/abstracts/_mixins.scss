@@ -90,6 +90,11 @@ $widthDesktopLarge: 1440px;
       (min-width: #{$widthMobileLarge}) {@content;}
    }
 
+   @else if $condition==mobile-lan {
+      @media only screen and
+      (orientation: landscape) {@content;}
+   }
+
    @else if $condition==mobile-med-lan {
       @media only screen and
       (orientation: landscape) and
