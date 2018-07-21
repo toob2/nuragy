@@ -1,12 +1,12 @@
 const toggler = document.querySelector('.nav__toggler');
-const navList = document.querySelector('.nav__list');
+const navWrapper = document.querySelector('.nav__wrapper');
 const burger  = document.querySelector('.nav__burger');
 const navLinks = document.querySelectorAll('.nav__link');
 const navArr = Array.apply(null, navLinks);
 
 function navToggle(){
-  navList.classList.toggle('nav__list');
-  navList.classList.toggle('nav__list--mobile');
+  navWrapper.classList.toggle('nav__wrapper');
+  navWrapper.classList.toggle('nav__wrapper--mobile');
   burger.classList.toggle('nav__burger--active');
 };
 

@@ -38,10 +38,10 @@
             &--2 {
                position: absolute;
                top: 40%;
-               left: 2%;
+               left: 5%;
 
                   @include media (mobile-med-lan) {
-                     transform: scale(1.15);
+                     transform: scale(1.1);
                   }
 
                   @include media (mobile-lg-lan) {

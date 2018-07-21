@@ -1,12 +1,10 @@
 header {
    height: 4rem;
    width: 100%;
-   background-color: transparent;
    position: fixed;
-   top: 0.3rem;
+   top: 0;
    left: 0;
    color: $color-logo;
-   padding-top: 0.75rem;
    z-index: 5;
 
       @include media (mobile-lan) {

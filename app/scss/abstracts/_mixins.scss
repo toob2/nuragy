@@ -115,7 +115,13 @@ $widthDesktopLarge: 1440px;
    @else if $condition==tab-small-lan {
       @media only screen and
       (orientation: landscape) and
-      (min-width: #{$widthTabletSmall}) {@content;}
+      (min-width: #{$widthTabletSmall}) and
+      (min-height: 700px) {@content;}
+   }
+
+   @else if $condition==tab-large {
+      @media only screen and
+      (min-width: #{$widthTabletLarge}) {@content;}
    }
 
 

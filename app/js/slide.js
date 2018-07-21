@@ -11,3 +11,4 @@ function nextSlide(){
 nextSlide();
 
 
+console.log(slides);

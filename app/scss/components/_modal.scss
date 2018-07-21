@@ -17,15 +17,11 @@
          // transform: scale(0);
          // animation: zoomIn .6s 1.2s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
 
-            @include media (mobile-med-lan) {
-               margin: 1.5rem 0 1.5rem 0;   
-               height: 100%;   
+            @include media (mobile-lg-lan) {  
+               height: 200%;   
+               padding: 1.5rem;
+               height: 100;
             }  
-
-            @include media (mobile-lg-lan) {
-               margin: 1.75rem 0 1.75rem 0;
-               height: 100%;
-            }
 
             @include media (tab-small) {           
                height: 80%;
