@@ -3,14 +3,72 @@
    @include box-style;
    @include flex (column, center);
 
+      @include media (desktop-sm) {
+         max-height: 27rem;
+         @include flex (column, center, center);
+      }
+
       &__img {
          width: 10rem;
          animation: heart 1.5s ease-in-out infinite;
+
+            @include media (desktop-sm) {
+               width: 7rem;
+            }
       }
+}
+
+#services-box--2 {
+   @include media (desktop-sm) {
+      width: 60%;
+      order: 1;
+      padding-bottom: 0;
+   }
 }
 
 .services-box {
    @include box-style;
+
+      @include media (desktop-sm) {
+         @include flex (row, space-between, flex-end);
+      }
+
+      &__text {
+         @include flex (column, space-evenly);
+         padding: 1.5rem;
+
+            @include media (desktop-sm) {
+               width: 60%;
+               order: 2;
+               padding-bottom: 0;
+            }
+      }
+
+      &__image {
+         width: 100%;
+         position: relative;
+
+            @include media (desktop-sm) {
+               order: 1;
+               width: 100%;
+               padding-bottom: 2rem;
+            }
+            
+
+            &--apply {
+               width: 100%;
+               @include flex (row, flex-start);
+            }
+
+            &--hire {
+               width: 100%;
+               @include flex (row, flex-end);
+
+                  // @include media (desktop-sm) {
+                  //    width: 75%;
+                  // }
+            }
+      }  
 
       &__btn-wrapper {
          
@@ -30,8 +88,8 @@
                }
 
                @include media (desktop-sm) {
-                  right: 25%;
-                  transform: scale(1.2);
+                  right: 5%;
+                  transform: scale(0.85);
                }
 
                
@@ -51,36 +109,13 @@
                      left: 7%;
                      transform: scale(1.25);
                   }
-            }
-      }
-   
-      &__text {
-         @include flex (column, space-evenly);
-         padding: 1.5rem;
-      }
-
-      &__image {
-         width: 100%;
-         position: relative;
-
-            &--apply {
-               width: 100%;
-               @include flex (row, flex-start);
 
                   @include media (desktop-sm) {
-                     width: 75%;
+                     left: 1%;
+                     transform: scale(0.85);
                   }
             }
-
-            &--hire {
-               width: 100%;
-               @include flex (row, flex-end);
-
-                  // @include media (desktop-sm) {
-                  //    width: 75%;
-                  // }
-            }
-      }  
+      }
 }
 
 
