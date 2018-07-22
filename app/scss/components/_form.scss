@@ -25,6 +25,14 @@
             }
 
             @include media (tab-sm-lan) {
+               height: 110%;
+            }
+
+            @include media (tab-lg-lan) {
+               height: 120%;
+            }
+
+            @include media (desktop-sm) {
                height: 100%;
             }
          }
