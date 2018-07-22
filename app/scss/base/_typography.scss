@@ -1,26 +1,30 @@
 .heading-primary {
    color: $color-logo;
+   display: inline-block;
+   margin-left: 5%;
+   
+      &__wrapper {
+         width: 100%;
+      }
     
-   &--main {
-      font-family: $font-secondary;
-      font-size: 4rem;
-      font-weight: 900;
-      margin-left: 3%;
-      letter-spacing: 0.10rem;
-      display: block;
-      // animation: moveInRight 2s ease-in-out 200ms;
-   }
+      &--main {
+         display: inline-block;
+         font-family: $font-secondary;
+         font-size: 4rem;
+         font-weight: 900;
+         letter-spacing: 0.10rem;
+         animation: moveInRight 2s ease-in-out 200ms;
+      }
 
-   &--sub {
-      font-family: $font-secondary;
-      font-size: 1.5rem;
-      font-weight: 600;
-      letter-spacing: 0.02rem;
-      display: block;
-      margin: 0.2rem 1.5rem 0 0;
-      text-align: right;
-      animation: moveInBottom 2s ease-in-out 200ms;
-   }
+      &--sub {
+         display: inline-block;
+         font-family: $font-secondary;
+         font-size: 1.5rem;
+         font-weight: 600;
+         letter-spacing: 0.02rem;
+         margin-left: 6rem;
+         animation: moveInBottom 2s ease-in-out 200ms;
+      }
 }
 
 .heading-secondary {
@@ -58,15 +62,15 @@
    color: $color-black;
    font-size: 1.25rem;
 
-      @include media (mobile-med-lan) {
+      @include media (mob-med-lan) {
          font-size: 1.5rem;
       }
 
-      @include media (mobile-lg-lan) {
+      @include media (mob-lg-lan) {
          font-size: 1.75rem;
       }
 
-      @include media (tab-small) {
+      @include media (tab-sm) {
          font-size: 1.75rem;
       }
       

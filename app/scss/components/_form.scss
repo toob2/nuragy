@@ -15,17 +15,21 @@
          font-size: 1.5rem;
          border-radius: 0.5rem;
    
-            @include media (mobile-med-lan) {  
+            @include media (mob-lan) {  
                height: 200%;   
                padding: 1.5rem;
             }  
-
-            @include media (mobile-lg-lan) {
-               height: 175%;
-               padding: 2rem;
+         
+            @include media (tab-sm) {
+               height: 100%;
             }
-      }
+
+            @include media (tab-sm-lan) {
+               height: 100%;
+            }
+         }
 }
+
 
 input[type=radio] {
    visibility: hidden;
@@ -103,7 +107,7 @@ input[type=radio] {
          font-size: 2rem;
          color:$color-form-items;
 
-            @include media (mobile-lan) {
+            @include media (mob-lan) {
                top: 0.75rem;
             } 
       }

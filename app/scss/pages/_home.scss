@@ -7,35 +7,19 @@
    background-repeat: no-repeat;
    position: relative;
 
-      @include media (mobile-med-lan) {
-         background-image: url(../images/mainLandscape.jpg);
+      @include media (mob-lan) {
+         background-image: url(../images/hero-lan.jpg);
          background-size: cover;
       }
 
-      @include media (mobile-lg-lan) {
-         background-image: url(../images/mainLandscape.jpg);
-         background-size: cover;
-      }
 
       &__text-box {
-         padding: 1rem 0 1.25rem;
+         padding: 0.5rem 0 1.25rem;
          background-color:rgba(#fff, 0.35);
          position: absolute;
          width: 100%;
          bottom: 4%;
          animation: appear 1s ease-in-out;
-
-            @include media (mobile-med-lan) {
-               padding: 1rem 20% 1rem 10%;
-            }
-
-            @include media (mobile-lg-lan) {
-               padding: 1rem 40% 1rem 10%;
-            }
-
-            @include media (tab-small) {
-               padding: 1rem 30% 1rem 5%;
-            }
       }
 }
 
@@ -51,7 +35,7 @@
    height: 90%;  
    margin-bottom: 7rem;
 
-      @include media (mobile-lan) {
+      @include media (mob-lan) {
             height: 130%;
             margin-bottom: 0;
          }

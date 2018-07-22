@@ -1,7 +1,6 @@
 .about-box {
    @include box-style;
    width: 100%;
-   background-color: $color-primary;
    text-align: center;      
 
       &__text {

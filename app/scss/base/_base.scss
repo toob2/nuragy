@@ -12,13 +12,29 @@ html {
    // font-family: 'Roboto', sans-serif;
    font-family: $font-primary;
 
-      @include media (mobile-lan) {
+      @include media (mob-lan) {
          font-size: 65%;
       }
 
-      @include media (tab-small) {
+      @include media (tab-sm) {
          font-size: 85%;
       } 
+
+      @include media (tab-sm-lan) {
+         font-size: 95%;
+      }
+
+      @include media (tab-lg) {
+         font-size: 110%;
+      }
+
+      @include media (desktop-sm) {
+         font-size: 115%;
+      }
+
+      @include media (desktop-lg) {
+         font-size: 120%;
+      }
 }
 
 body {

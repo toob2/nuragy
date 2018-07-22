@@ -35,9 +35,12 @@
 }
 
 .footer-social {
-   @include flex (row, space-evenly);
    background-color: $color-secondary;
    padding: 1rem;
+
+      &__wrapper {
+         @include flex (row, space-evenly);
+      }
    
       &__icon {
          display: inline-block;
@@ -51,4 +54,3 @@
             }
       }  
 }
-

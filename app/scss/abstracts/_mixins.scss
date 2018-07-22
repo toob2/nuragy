@@ -67,70 +67,67 @@
 $widthMobileSmall: 320px;
 $widthMobileMedium: 375px;
 $widthMobileLarge: 425px;
-$widthMobileMedLan: 600px;
-$widthMobileLargeLan: 600px; 
 $widthTabletSmall: 768px;
+$widthTabletSmallLan: 900px;
 $widthTabletLarge: 1024px;
+$widthTabletLargeLan: 1150px;
 $widthDesktopSmall: 1280px;
-$widthDesktopLarge: 1440px;
+$widthDesktopLarge: 1600px;
 
 @mixin media ($condition) {
-   @if $condition==mobile-sm {
+   @if $condition==mob-sm {
       @media only screen and
       (min-width: #{$widthMobileSmall}) {@content;}
    }
 
-   @else if $condition==mobile-med {
+   @else if $condition==mob-med {
       @media only screen and
       (min-width: #{$widthMobileMedium}) {@content;}
    }
 
-   @else if $condition==mobile-lg {
+   @else if $condition==mob-lg {
       @media only screen and
       (min-width: #{$widthMobileLarge}) {@content;}
    }
 
-   @else if $condition==mobile-lan {
+   @else if $condition==mob-lan {
       @media only screen and
       (orientation: landscape) {@content;}
    }
 
-   // @else if $condition==mobile-med-lan {
-   //    @media only screen and
-   //    (orientation: landscape) and
-   //    (max-width: #{$widthMobileMedLan}) {@content;}
-   // }
-
-   // @else if $condition==tab-small {
-   //    @media only screen and
-   //    (min-width: #{$widthTabletSmall}) {@content;}
-   // }
-
-   @else if $condition==mobile-lg-lan {
+   @else if $condition==tab-sm {
       @media only screen and
-      (orientation: landscape) and
-      (min-width: #{$widthMobileLargeLan}) {@content;}
+      (orientation: portrait) and
+      (min-width: #{$widthTabletSmall}) {@content;}
    }
 
-   @else if $condition==tab-small-lan {
+   @else if $condition==tab-sm-lan {
       @media only screen and
       (orientation: landscape) and
-      (min-width: #{$widthTabletSmall}) and
-      (min-height: 700px) {@content;}
+      (min-width: #{$widthTabletSmallLan}) {@content;}
    }
 
-   @else if $condition==tab-large {
+   @else if $condition==tab-lg {
       @media only screen and
+      (orientation: portrait) and
       (min-width: #{$widthTabletLarge}) {@content;}
    }
 
+   @else if $condition==tab-lg-lan {
+      @media only screen and
+      (orientation: landscape) and
+      (min-width: #{$widthTabletLargeLan}) {@content;}
+   }
 
+   @else if $condition==desktop-sm {
+      @media only screen and
+      (min-width: #{$widthDesktopSmall}) {@content;}
+   }
 
-   
-
-
-
-
+   @else if $condition==desktop-lg {
+      @media only screen and
+      (min-width: #{$widthDesktopLarge}) {@content;}
+   }
 }
 
 
