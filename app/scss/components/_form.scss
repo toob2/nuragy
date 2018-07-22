@@ -15,17 +15,15 @@
          font-size: 1.5rem;
          border-radius: 0.5rem;
    
-         @include media (mobile-med-lan) {  
-            height: 200%;   
-            padding: 1.5rem;
-         }  
+            @include media (mobile-med-lan) {  
+               height: 200%;   
+               padding: 1.5rem;
+            }  
 
-         @include media (mobile-lg-lan) {
-            height: 175%;
-            padding: 2rem;
-         }
-
-         
+            @include media (mobile-lg-lan) {
+               height: 175%;
+               padding: 2rem;
+            }
       }
 }
 

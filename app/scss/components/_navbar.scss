@@ -10,7 +10,7 @@
    
       &__logo-text {
          color: $color-logo;
-         font-size: 1.25rem;
+         font-size: 1.35rem;
          letter-spacing: 0.15rem;
          padding-left: 0.65rem;
          font-weight: 400;
@@ -69,12 +69,15 @@
             }
       }
    
-
    &__link {
-      font-size: 2.5rem;
+      font-size: 3rem;
       text-decoration: none;
       color: $color-text-nav;
       padding: 0 1.25rem;
+
+         @include media (mobile-lan) {
+            font-size: 2.5rem;
+         }
       
          @include media (tab-small-lan) {
             font-size: 1.75rem;
@@ -107,7 +110,7 @@
       display: inline-block;
       cursor: pointer;
       height: 3rem;
-      width: $burger-line-width;
+      width: 3.5rem;
       text-decoration: none;
       margin-right: 4%;
                   
@@ -118,7 +121,7 @@
       
       &__toggler-wrapper {
          height: 3rem;
-         width: $burger-line-width;
+         width: 3.5rem;
          position: absolute;
          top: 0;
 
@@ -130,8 +133,8 @@
       &__burger {
          content: '';
          position: absolute;
-         height: $burger-line-height;
-         width: $burger-line-width;
+         height: 0.2rem;
+         width: 3.5rem;
          background-color: $color-logo;
          top: 1.5rem;
          cursor: pointer;
@@ -139,8 +142,8 @@
             &::before {
                content: '';
                position: absolute;
-               height: $burger-line-height;
-               width: $burger-line-width;
+               height: 0.2rem;
+               width: 3.5rem;
                background-color: $color-logo;
                top: -0.9rem;
                transition: all 275ms ease-in-out;
@@ -149,8 +152,8 @@
             &::after {
                content: '';
                position: absolute;
-               height: $burger-line-height;
-               width: $burger-line-width;
+               height: 0.2rem;
+               width: 3.5rem;
                background-color: $color-logo;
                bottom: -0.9rem;
                transition: all 275ms ease-in-out;

@@ -6,9 +6,14 @@ header {
    left: 0;
    color: $color-logo;
    z-index: 5;
+   margin-top: 1rem;
 
       @include media (mobile-lan) {
          padding: 1rem 0 0 1rem;
+      }
+
+      @include media (tab-large) {
+         margin-top: 0.5rem;
       }
 }
 

@@ -13,16 +13,12 @@ html {
    font-family: $font-primary;
 
       @include media (mobile-lan) {
-         font-size: 68%;
+         font-size: 65%;
       }
 
       @include media (tab-small) {
          font-size: 85%;
-      }
-
-
-
-   
+      } 
 }
 
 body {
