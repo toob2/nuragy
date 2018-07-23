@@ -630,11 +630,19 @@ input[type=radio] {
         max-width: 70%;
         height: 100%;
         font-size: 2rem; } }
+  .nav__item:hover {
+    background: #eeeeee;
+    transition: all 0.25s ease-in-out; }
+    @media only screen and (min-width: 1280px) {
+      .nav__item:hover {
+        background: transparent; } }
   .nav__link {
     font-size: 3rem;
     text-decoration: none;
     color: #2a2c2c;
-    padding: 0 1.25rem; }
+    margin-left: 1.5rem;
+    padding: 0.25rem;
+    position: relative; }
     @media only screen and (orientation: landscape) {
       .nav__link {
         font-size: 2.5rem; } }
@@ -643,7 +651,18 @@ input[type=radio] {
         font-size: 3.5rem; } }
     @media only screen and (min-width: 1280px) {
       .nav__link {
-        font-size: 1.5rem; } }
+        font-size: 1.5rem; }
+        .nav__link::after {
+          content: '';
+          position: absolute;
+          bottom: 3px;
+          left: 0;
+          width: 0;
+          height: 2px;
+          transition: width 0.25s ease-in; }
+        .nav__link:hover::after {
+          background: black;
+          width: 100%; } }
     @media only screen and (min-width: 1600px) {
       .nav__link {
         font-size: 2.25rem; } }
@@ -653,14 +672,6 @@ input[type=radio] {
       display: flex;
       align-items: center;
       z-index: 10; }
-  .nav__item {
-    transition: all 200ms ease-in-out; }
-    .nav__item:hover {
-      background-color: rgba(238, 238, 238, 0.5);
-      transform: scale(1.15); }
-    .nav__item:active {
-      background-color: rgba(238, 238, 238, 0.5);
-      transform: scale(1.15); }
   .nav__toggler {
     display: inline-block;
     cursor: pointer;
