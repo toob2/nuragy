@@ -36,7 +36,17 @@
    margin-bottom: 7rem;
 
       @include media (mob-lan) {
-            height: 130%;
+            height: 100%;
+            margin-bottom: 0;
+         }
+
+         @include media (tab-sm) {
+            height: 60%;
+            margin-bottom: 0;
+         }
+
+         @include media (tab-lg-lan) {
+            height: 70%;
             margin-bottom: 0;
          }
 }

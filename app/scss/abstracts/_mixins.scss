@@ -67,10 +67,11 @@
 $widthMobileSmall: 320px;
 $widthMobileMedium: 375px;
 $widthMobileLarge: 425px;
+$widthMobileLargeLan: 730px;
 $widthTabletSmall: 768px;
 $widthTabletSmallLan: 900px;
 $widthTabletLarge: 1024px;
-$widthTabletLargeLan: 1150px;
+$widthTabletLargeLan: 1100px;
 $widthDesktopSmall: 1280px;
 $widthDesktopLarge: 1600px;
 
@@ -92,6 +93,12 @@ $widthDesktopLarge: 1600px;
 
    @else if $condition==mob-lan {
       @media only screen and
+      (orientation: landscape) {@content;}
+   }
+
+   @else if $condition==mob-lg-lan {
+      @media only screen and
+      (min-width: #{$widthMobileLargeLan}) and
       (orientation: landscape) {@content;}
    }
 
