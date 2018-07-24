@@ -12,6 +12,12 @@
          background-size: cover;
       }
 
+      @include media (desktop-sm) {
+         background-image: url(../images/hero-big.jpg);
+         background-size: cover;
+         background-position: left top;
+      }
+
 
       &__text-box {
          padding: 0.5rem 0 1.25rem;
@@ -34,15 +40,18 @@
 .testimonials {
    height: 90%;  
    margin-bottom: 7rem;
+   max-height: 400px;
 
       @include media (mob-lan) {
             height: 100%;
             margin-bottom: 0;
+            max-height: 70em;
          }
 
          @include media (tab-sm) {
             height: 60%;
             margin-bottom: 0;
+            max-height: 50em;
          }
 
          @include media (tab-lg-lan) {
