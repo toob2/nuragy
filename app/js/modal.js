@@ -6,6 +6,7 @@ let form1 = document.querySelector('#form1');
 let form2 = document.querySelector('#form2');
 const body = document.querySelector('body');
 const header = document.querySelector('header');
+const formCloseIcon = document.querySelectorAll('.form__close-icon');
 
 function modalOpen(){
    modal.classList.toggle('modal')
@@ -47,6 +48,28 @@ modalOverlay.addEventListener('click', function(){
       form2.className = 'form'
    };
 })
+
+formCloseIcon.forEach(function(a){
+   a.addEventListener('click', function(){
+      modalClose();
+   if (form1.className === 'form--active'){
+      form1.className = 'form'
+   };
+
+   if (form2.className === 'form--active'){
+      form2.className = 'form'
+   };
+   })
+});
+
+
+
+ 
+   
+
+
+
+
 
 
 
