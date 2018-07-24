@@ -30,7 +30,8 @@
    @include box-style;
 
       @include media (desktop-sm) {
-         @include flex (row, space-between, flex-end);
+         @include flex (row, space-between);
+         padding-top: 0;
       }
 
       &__text {
@@ -40,7 +41,7 @@
             @include media (desktop-sm) {
                width: 60%;
                order: 2;
-               padding-bottom: 0;
+               padding: 0;
             }
       }
 
@@ -53,8 +54,7 @@
                width: 100%;
                padding-bottom: 2rem;
             }
-            
-
+         
             &--apply {
                width: 100%;
                @include flex (row, flex-start);

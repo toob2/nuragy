@@ -408,8 +408,7 @@ header {
     border-radius: 0.5rem; }
     @media only screen and (orientation: landscape) {
       .form--active {
-        height: 200%;
-        padding: 1.5rem; } }
+        height: 200%; } }
     @media only screen and (orientation: portrait) and (min-width: 768px) {
       .form--active {
         height: 100%; } }
@@ -554,6 +553,9 @@ input[type=radio] {
     overflow: auto;
     border-radius: 1rem;
     padding: 0 0.5rem 1rem 0.5rem; }
+    @media only screen and (min-width: 375px) {
+      .modal__content {
+        padding: 0 1rem 1rem 1rem; } }
 
 .modal-overlay {
   display: none; }
@@ -772,7 +774,8 @@ input[type=radio] {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      align-items: flex-end; } }
+      align-items: center;
+      padding-top: 0; } }
   .services-box__text {
     display: flex;
     flex-direction: column;
@@ -783,7 +786,7 @@ input[type=radio] {
       .services-box__text {
         width: 60%;
         order: 2;
-        padding-bottom: 0; } }
+        padding: 0; } }
   .services-box__image {
     width: 100%;
     position: relative; }

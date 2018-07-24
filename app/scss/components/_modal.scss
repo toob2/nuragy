@@ -54,6 +54,11 @@
          overflow: auto;
          border-radius: 1rem;
          padding: 0 0.5rem 1rem 0.5rem;
+
+            @include media (mob-med) {  
+               padding: 0 1rem 1rem 1rem;
+               
+            }
          
       }   
 }
