@@ -18,15 +18,23 @@
          background-position: left top;
       }
 
-
       &__text-box {
          padding: 0.5rem 0 1.25rem;
-         background-color:rgba(#fff, 0.35);
+         background-color:rgba(#fff, 0.5);
          position: absolute;
          width: 100%;
-         bottom: 4%;
+         bottom: 6%;
          animation: appear 1s ease-in-out;
       }
+}
+
+.arrow__wrap {
+   position: absolute;
+   bottom: 0.5%;
+   left: 50%;
+   color: white;
+   padding: .5rem;
+   color:rgba(#fff, 0.5);
 }
 
 .about {

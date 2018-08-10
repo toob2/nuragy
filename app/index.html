@@ -7,7 +7,9 @@
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
    <link rel="stylesheet" href="css/main.css">
-   <title>Document</title>
+   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script> 
+   <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+   <title>Nursing Agency</title>
 </head>
 
 <body>
@@ -43,7 +45,10 @@
             <span class="heading-primary--sub">Exceptional people. Extraordinary care.</span>
             </h1>
          </div>
-      </div>   
+      </div> 
+      <a href="index.html#about" class="arrow__wrap">
+         <i class="fas fa-arrow-down fa-2x"></i>
+      </a>  
    </section>
 
    <section class="about container" id="about">
@@ -70,7 +75,7 @@
   
    <section class="services container" id="services">
       <div class="services-range u-margin-bottom-medium">
-         <h2 class="heading-secondary u-margin-bottom-medium">Our services:</h2>
+         <h2 class="heading-secondary u-margin-bottom-medium">Our services</h2>
          <div class="hr hr--short u-margin-bottom-xs"></div>
          <div class="hr hr--short hr--thick hr--red u-margin-bottom-medium"></div>
          <img src="images/heart.svg" alt="" class="services-range__img u-margin-bottom-medium">
@@ -344,7 +349,14 @@
   <script src="js/navigation.js"></script>
   <script src="js/slide.js"></script>
   <script src="js/modal.js"></script>
-  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   <script src="js/sr.js"></script>
+  
+  <!--smooth scroll-->
+   <script>
+      var scroll = new SmoothScroll('a[href*="#"]', {
+         speed: 1000
+      });
+   </script>
+
 </body>
 </html>
